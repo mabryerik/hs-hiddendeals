@@ -1,0 +1,90 @@
+@media (max-width: 915px) {
+	.site-header.flex-row {
+		flex-flow: column;
+		padding-right: 0;
+	}
+
+	.site-title,
+	.header-nav {
+		width: 100% !important;
+	}
+	
+	.header-nav nav {
+		border-radius: 0!important;
+	}
+
+	.header-nav a[href] {
+		flex-grow: 1;
+	}
+
+	.site-title img {
+		width: min(75%, 30ch);
+		height: auto;
+	}
+
+	.header-nav {
+		border-radius: 0 !important;
+	}
+
+	.header-nav a[href] {
+		padding: 0.5rem !important;
+	}
+	
+	.menu-nav a[href] {
+		padding: 0.5rem 0.25rem;
+	}
+	
+	.page-header h2 {
+		padding-block: 0 2rem;
+	}
+	
+	.padding {
+		padding: 0.25rem;
+	}
+	
+	table {
+		font-size: 11px;
+	}
+}
+
+@media (max-width: 600px) {
+	
+	.notice {
+		font-size: 10px!important;
+	}
+	
+	.header-nav.page-title {
+		padding-top: 0!important;
+	}
+	
+	.intro {
+		padding-top: 0!important;
+		font-size: 12px;
+		& .fake-header {
+			font-size: 1rem!important;
+			vertical-align: revert!important;
+		}
+	}
+	
+	main .content {
+		padding: 0!important;
+	}
+	.padding {
+		padding: 0!important;
+	}
+	table {
+		& thead {
+			padding-block: 0!important;
+		}
+		& td, th {
+			padding: 0.25rem!important;
+			border-right: 1px solid rgba(127, 127, 127, 0.25);
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.intro {
+		font-size: 12px;
+}
+}

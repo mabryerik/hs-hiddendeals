@@ -1,0 +1,6 @@
+#media {
+	display: none;
+	& .intro p {
+		padding: 2rem;
+	}
+}

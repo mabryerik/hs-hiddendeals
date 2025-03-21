@@ -1,0 +1,340 @@
+@import url("reset.css");
+@import url("menu.css");
+@import url("mobile.css");
+@import url("media.css");
+
+@font-face {
+	font-family: 'Cooper';
+	src: local('Cooper'), url('/fonts/COOPBL.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'GraphikCompact';
+	src: local('GraphikCompact'), url('/fonts/GraphikCompact.woff2') format('woff');
+}
+
+@font-face {
+	font-family: 'GraphikCompactBlack';
+	src: local('GraphikCompactBlack'), url('/fonts/GraphikCompactBlack.woff2') format('woff');
+}
+
+:root {
+
+	--box-shadow-66: 0 4px 2px rgba(0, 0, 0, 0.33);
+	--text-shadow: 0 1px 2px rgba(0, 0, 0, 0.66);
+
+}
+
+html {
+	color: rgb(43, 43, 43);
+	font-size: 18px;
+	scroll-behavior: smooth;
+	background-image: linear-gradient(hsla(0, 0%, 100%, 1), hsla(0, 0%, 77%, 1));
+	background-size: cover;
+}
+
+body {
+	font-family: 'GraphikCompact', ui-sans-serif, sans-serif;
+	letter-spacing: 0.5px;
+
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Cooper", ui-sans-serif, sans-serif;
+	text-transform: uppercase;
+	padding-block: 1rem;
+	letter-spacing: 1px;
+}
+
+h4, h5 {
+	font-family: 'GraphikCompactBlack', ui-sans-serif, sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding-bottom: 1rem;
+}
+
+img {
+	border-radius: 0.5rem;
+}
+
+.left {
+	text-align: left;
+}
+
+.notice {
+	font-size: 0.75rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	display: block;
+	text-align: center;
+	color: black;
+	padding: 0.25rem;
+	margin-bottom: 1rem;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.33);
+}
+
+.up {
+	position: sticky;
+	bottom: 0;
+	outline: 1px solid rgba(0, 0, 0, 0.1);
+	border-top-right-radius: 0.5rem;
+	overflow: hidden;
+	z-index: 100;
+	width: fit-content;
+
+	& a[href] {
+		padding: 0.5rem 0.33rem 0.33rem 0.33rem;
+		color: black;
+		background-color: whitesmoke;
+	}
+}
+
+.flex-row {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.center {
+	text-align: center;
+}
+
+.wrapper {
+	width: 100%;
+	margin-inline: auto;
+}
+
+
+
+header.site-header {
+	width: min(100% - 1rem, 90ch);
+	margin-inline: auto;
+	background-image: url(/img/background-purple.png);
+	background-size: cover;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	box-shadow: var(--box-shadow-66);
+	padding-right: 1rem;
+
+	& .site-title {
+		padding-inline: 1rem;
+		width: 33%;
+
+		& img {
+			margin-inline: auto;
+			margin-top: 0.5rem;
+			width: min(75%, 400px);
+		}
+	}
+
+	& .subtitle {
+		color: white;
+		font-weight: 100;
+		padding-block: 0 1rem;
+		padding-inline: 0;
+		text-shadow: var(--text-shadow);
+		letter-spacing: 2px;
+	}
+	
+	& .page-title {
+
+		& h2 {
+			font-size: 2rem;
+			letter-spacing: 2px;
+			text-shadow: var(--text-shadow);
+			color: white;
+			text-align: center;
+		}
+	}
+
+	& .header-nav {
+		width: min(100%, 60ch);
+		font-size: 14px;
+		padding-top: 1rem;
+		&  nav {
+			background-color: rgba(255, 255, 255, 0.1);
+			border-radius: 0.5rem;
+			overflow: hidden;
+			text-align: center;
+			text-transform: uppercase;
+			font-family: 'Cooper', ui-sans-serif, sans-serif;
+			backdrop-filter: blur(3px);
+			text-shadow: var(--text-shadow);
+		}
+
+		& .focus {
+			color: rgb(255, 230, 0) !important;
+
+			&:hover {
+				color: white !important;
+				transition: color ease-in 250ms;
+			}
+		}
+
+		& a[href] {
+			display: block;
+			text-decoration: none;
+			padding-inline: 1rem 0.5rem;
+			color: white;
+			letter-spacing: 2px;
+			padding: 1rem 1.25rem;
+			font-size: 1rem;
+			width: calc(50% - 0.5rem);
+			height: 100%;
+
+			&:hover {
+				background-color: rgba(255, 255, 255, 0.1);
+				transition: background-color ease-in 250ms;
+			}
+		}
+	}
+
+	& p {
+		font-size: 1rem;
+	}
+}
+
+main {
+	width: 100%;
+	margin-inline: auto;
+
+	& p {
+		margin-bottom: 1rem;
+	}
+
+	.content {
+		padding: 1rem;
+		border-radius: 0.5rem;
+	}
+}
+
+.intro {
+	width: min(100% - 1rem, 90ch);
+	margin-inline: auto;
+	padding: 1rem 0 0 0;
+	border-radius: 0.5rem;
+	margin-block: 1rem;
+	outline: 1px solid rgba(0, 0, 0, 0.1);
+	background-image: url(/img/background-green.png);
+	background-size: cover;
+	background-position: center;
+	color: white;
+	line-height: 1.25;
+	box-shadow: var(--box-shadow-66);
+	overflow: hidden;
+	& .about {
+		background-color: rgba(255, 255, 255, 0.1);backdrop-filter: blur(4px) brightness(1.25);
+		color: black;
+		margin-top: 1rem;
+		margin-bottom: 0;
+		& p {
+			text-shadow: none;
+			padding: 1rem;
+			text-align: center;
+			margin-bottom: 0;
+		}
+	}
+
+	& .fake-header {
+		font-family: 'Cooper';
+		text-transform: uppercase;
+		font-size: 2rem;
+		vertical-align: sub;
+	}
+
+	& p {
+		text-align: justify;
+		text-shadow: var(--text-shadow);
+		padding: 1rem 1rem 0 1rem;
+	}
+
+	& p:nth-of-type(2) {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-block: 0;
+	}
+}
+.content {
+		.grid {
+			display: grid;
+			grid-template-columns:
+				repeat(auto-fit, minmax(350px, 1fr));
+			gap: 1rem;
+			& img {
+				aspect-ratio: 1/1;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+	
+		.post {
+			outline: 1px solid rgba(0, 0, 0, 0.1);
+			border-radius: 0.5rem;
+			background-color: white;
+			padding: 1rem;
+			box-shadow: var(--box-shadow-66);		
+			& header {
+				text-transform: uppercase;
+				& .flex-row:first-of-type { 
+					justify-content: space-between;
+					overflow: hidden;
+					align-items: center;
+					gap: 0;
+					
+					& h3 {
+					width: calc(85% - 1rem);
+					font-size: 1rem;
+					padding-block: 0 0.5rem;
+					}
+					& span {
+					display: block;
+					flex-grow: 1;
+					width: calc(15% - 1rem);
+
+					}
+				}
+				& .flex-row:last-of-type { 
+					& span {
+						display: block;
+						flex-grow: 1;
+					}
+					.price-level {
+						font-weight: 500;
+					}
+					.profile {
+						text-align: center;
+						background-color: rgba(111, 52, 172, 0.33);
+						color: white;
+						padding: 0.5rem 0.25rem;
+						border-radius: 0.5rem;
+						font-size: 0.75rem;
+					}
+			}
+		}
+	
+			& .flex-row {
+				align-items: center;
+				justify-content: space-evenly;
+				gap: 0.5rem;
+			}
+			& .inner *:first-child {
+				margin-top: 1rem;
+			}
+			& video {
+				width: calc(100% - 1rem);
+				background-color: rgba(0, 0, 0, 0.1);
+				border-radius: 0.5rem;
+				box-shadow: var(--box-shadow-66);
+				aspect-ratio: 1 / 1;
+				object-fit: cover;
+				height: auto;
+			}
+			& img {
+				flex-grow: 1;
+				max-width: calc(50% - 1rem);
+				box-shadow: var(--box-shadow-66);
+			}
+		}
+	}
