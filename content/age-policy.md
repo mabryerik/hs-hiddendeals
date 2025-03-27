@@ -1,0 +1,17 @@
+---
+title: Age Policy
+layout: layouts/page.njk
+---
+
+**We are not responsible and cannot be held responsible for any misunderstandings regarding our Age Policy, so please take the time to read it carefully.**
+
+Our website has an age policy of 21 years old or over. This policy is in place to ensure that our website and services are used in a responsible manner. Visitors to our website must be 21 years old or over to access our services. Those under the age of 21 are not allowed to use our services.
+
+We may take additional steps to verify the age of visitors to our website if needed.
+
+### This site is not intended for children
+Our site is meant for adults. We do not knowingly collect personally identifiable data from children under 13. If you are a parent or legal guardian and think your child has given us information, you can write to us . Please mark your inquiries "COPPA Information Request."
+
+
+
+Parents, you can learn more about how to protect children's privacy online visiting [this website »](https://consumer.ftc.gov/identity-theft-and-online-security/protecting-kids-online)
