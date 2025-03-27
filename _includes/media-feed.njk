@@ -1,0 +1,36 @@
+{%- for post in flower | reverse %}
+<div class="post">
+	<header>
+		<div class="flex-row">
+			<h3>{{ post.data.strain }}</h3>
+			<span class="thca center">
+				{{ post.data.thca }}
+			</span>
+		</div>
+		<div class="flex-row">
+			<span class="price-level">{{ post.data.priceLevel }}</span>
+			<span class="profile {% if post.data.profile == "hybrid" %}hybrid{% endif %} {% if post.data.profile == "indica" %}indica{%endif%} {% if post.data.profile == "sativa" %}sativa{% endif %}"">{{ post.data.profile }}</span>
+		</div>
+	</header>
+	<div class="flex-row">
+	{% if post.data.video1 %}
+		<video class="{% if post.data.fullspanVideo %}full-span{% else %}evenly{%endif%}" controls loop muted preload="auto" height="220" width="390" tabindex="0">
+			<source src="{{ post.data.video1 }}" type="video/webm" />
+			If you're seeing this message, your web browser does not support this video type. Please contact your sale rep to get receive this video.
+		</video>
+	{% endif %}
+	{% if post.data.video2 %}
+		<video class="evenly" controls loop muted preload="auto" height="220" width="390" tabindex="0">
+			<source src="{{ post.data.video2 }}" type="video/webm" />
+			If you're seeing this message, your web browser does not support this video type. Please contact your sale rep to get receive this video.
+		</video>
+	{% endif %}
+	{% if post.data.photo1 %}
+		<img class="{% if post.data.fullspanPhoto %}full-span{% else %}evenly{%endif%}" src="{{ post.data.photo1 }}" alt="{{ post.data.strain }} THCa Flower" class="	{% if post.data.fullspanPhoto %}full-span{%endif%}" tabindex="0">
+	{% endif %}
+	{% if post.data.photo2 %}
+		<img src="{{ post.data.photo2 }}" alt="{{ post.data.strain }} THCa Flower" tabindex="0">
+	{% endif %}
+	</div>
+</div>
+{% endfor %}
