@@ -619,7 +619,7 @@ main {
 	.grid {
 		display: grid;
 		grid-template-columns:
-			repeat(auto-fit, minmax(calc(500px - 2rem), 1fr));
+			repeat(auto-fit, minmax(calc(390px - 2rem), 1fr));
 		gap: 1rem;
 	}
 }
