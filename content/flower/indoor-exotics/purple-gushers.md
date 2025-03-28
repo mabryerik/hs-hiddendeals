@@ -1,0 +1,11 @@
+---
+strain: purple gushers
+profile: hybrid
+priceLevel: aaa+ indoor exotic
+thca: "31,77%"
+video1: https://media.dont.zone/hs/media/vid/flower/aaa-plus-indoor-ex_hybrid_purple-gushers-31%25.webm
+photo1: https://media.dont.zone/hs/media/img/flower/aaa-plus-indoor-ex_hybrid_purple-gushers_31%25.jpeg
+linkid: purple-gushers
+items: 2
+---
+

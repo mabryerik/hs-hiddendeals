@@ -1,0 +1,11 @@
+---
+strain: gumbo
+profile: indica
+thca: "27.1"
+priceLevel: aaa+ indoor exotic
+video1: https://media.dont.zone/hs/media/vid/flower/aaa-plus-indoor-ex_indica_gumbo-27%25.webm
+photo1: https://media.dont.zone/hs/media/img/flower/aaa-plus-indoor-ex_indica_gumbo-27%25-2.jpeg
+fullspanVideo: true
+linkid: aaa-plus-gumbo
+items: 2
+---

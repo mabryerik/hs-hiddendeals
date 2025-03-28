@@ -1,0 +1,10 @@
+---
+strain: girl scout cookies
+profile: indica
+priceLevel: aaa+ indoor exotic
+video1: https://media.dont.zone/hs/media/vid/flower/aaa-plus-indoor-ex_indica_girl-scout-cookies.webm
+photo1: https://media.dont.zone/hs/media/img/flower/aaa-plus-indoor-ex_indica_girl-scout-cookies%202.jpeg
+fullspanVideo: true
+linkid: aaa-plus-girl-scout-cookies
+items: 2
+---

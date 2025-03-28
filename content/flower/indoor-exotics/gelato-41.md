@@ -1,0 +1,9 @@
+---
+strain: gelato 41
+profile: sativa
+priceLevel: aaa+ indoor exotic
+thca: "29.26%"
+photo1: https://media.dont.zone/hs/media/img/flower/aaa-plus-indoor-ex_sativa_gelato-41.jpg
+linkid: aaa-plus-gelato-41
+items: 1
+---

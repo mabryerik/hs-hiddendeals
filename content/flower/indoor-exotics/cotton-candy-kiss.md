@@ -1,0 +1,11 @@
+---
+strain: cotton candy kush
+profile: hybrid
+priceLevel: aaa+ indoor exotic
+thca: "29%"
+video1: https://media.dont.zone/hs/media/vid/flower/aaa-plus-indoor-ex_hybrid_cotton-candy-kush.webm
+photo1: https://media.dont.zone/hs/media/img/flower/aaa-plus-indoor-ex_hybrid_cotton-candy-kush.jpeg
+linkid: cotton-candy-kush
+items: 2
+---
+

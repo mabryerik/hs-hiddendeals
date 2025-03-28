@@ -1,0 +1,10 @@
+---
+strain: cinnamon milk
+profile: hybrid
+priceLevel: aaa+ indoor exotic
+thca: "30.78%"
+photo1: https://media.dont.zone/hs/media/img/flower/aaa-plus-indoor-ex_hybrid_cinnamon-milk.jpeg
+linkid: cinnamon-milk
+items: 1
+---
+
