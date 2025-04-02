@@ -147,6 +147,26 @@ p {
 	margin-bottom: 1rem;
 }
 
+blockquote {
+	padding-left: 2rem;
+	margin-bottom: 1rem;
+	font-style: italic;
+}
+
+main a[href] {
+	text-decoration: underline;
+	text-decoration-color: blue;
+	text-decoration-thickness: 3px;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.page-content a[href] {
+	text-decoration-thickness: 1px;
+}
+
 .tip {
 	width: min(100%, 90ch) !important;
 	border-radius: 0.25rem;
@@ -196,7 +216,7 @@ kbd {
 	display: block;
 	text-align: center;
 	padding: 0.25rem;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.33);
+	text-shadow: var(--text-shadow);
 	letter-spacing: 1px;
 }
 
@@ -329,7 +349,7 @@ nav {
 	}
 }
 
-#homepage h2 {
+#homepage h2.center {
 	margin-block: 2dvw;
 }
 
@@ -358,7 +378,9 @@ main {
 		width: min(100% - 2dvw, 90ch);
 		margin-inline: auto;
 		margin-block: 2rem 1rem;
-		padding: 2rem;
+		padding-inline: 4dvw;
+		padding-block: 4dvw 10dvw;
+		min-height: 75dvh;
 		box-shadow: var(--box-shadow-66);
 
 		& h2 {
@@ -372,12 +394,29 @@ main {
 			font-size: 1.25rem;
 			color: var(--font-color-dark);
 			text-shadow: none;
+			margin-block: 0 1dvw;
+		}
+
+		& h4 {
+			padding: 0;
+			margin-block: 0 1dvw;
+			color: rgb(99, 72, 157);
 		}
 
 		& p {
 			text-align: justify;
 			margin-inline: auto;
 		}
+	}
+}
+
+.gcp {
+	& > * {
+		padding: 2dvw;
+	}
+
+	.iframe {
+	float: left;
 	}
 }
 
@@ -398,7 +437,7 @@ main {
 		text-shadow: var(--text-shadow);
 		margin-bottom: 0;
 		margin-inline: auto;
-		width: min(100%, 120ch);
+		width: min(100%, 90ch);
 	}
 
 	& .fake-header {
@@ -487,8 +526,16 @@ main {
 			align-content: flex-start;
 		}
 
+		h2,
+		h3 {
+			line-height: 1;
+			margin: 0;
+			padding: 0;
+		}
+
 		& h2 {
 			margin-block: 0 1dvw;
+			font-size: clamp(1.5rem, 4dvw, 2rem);
 		}
 
 		& h3 {
@@ -567,12 +614,6 @@ main {
 			width: 66%;
 			flex-grow: 1;
 			padding-right: 1dvw;
-
-			h2,
-			h3 {
-				font-size: clamp(1.5rem, 4dvw, 2rem);
-				line-height: 1;
-			}
 		}
 
 		& .other-info {
@@ -867,16 +908,21 @@ main {
 
 	& .footer-nav {
 		gap: 1rem;
-		display: none;
 
 		& a[href] {
 			color: white;
 			display: block;
 			width: fit-content;
 			text-transform: capitalize;
+			text-shadow: none;
+			font-weight: normal;
+			font-size: 1rem;
+			line-height: 0.5;
+			padding: 0.75rem;
 
 			&:hover {
 				text-decoration: none;
+				border-radius: var(--border-radius);
 			}
 		}
 	}
@@ -923,11 +969,12 @@ main {
 
 .page-header {
 	color: white;
-	text-shadow: 0 2px 1px black;
+	padding-block: 4dvw;
 
 	& h2 {
 		font-size: 2rem;
 		padding-block: 0;
+		text-shadow: var(--text-shadow);
 	}
 }
 
