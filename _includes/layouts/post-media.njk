@@ -1,0 +1,82 @@
+---
+layout: layouts/base.njk
+---
+{% include "parts/page-header.njk" %}
+
+<section id="media-page">
+	<article class="post">
+		<header class="flex-column">
+			<div class="flex-row row">
+				<div class="price-compare flex-row">
+					<p class="center">
+						<strong>Hidden Deals Price</strong><br>
+						{{ hdPrice }}
+					</p>
+					<p class="center">
+						<span><strong>Regular Price</strong></span>
+						{{ regPrice }}
+					</p>
+				</div>
+				<div class="flex-column other-info {% if profile == "hybrid" %}hybrid{% endif %} {% if profile == "indica" %}indica{%endif%} {% if profile == "sativa" %}sativa{% endif %}">
+					<span class="profile">{{ profile }}</span>
+					<span class="thca center">{{ thca }} THCa</span>
+				</div>
+			</div>
+		</header>
+		<div class="media-area">
+			<div class="flex-row">
+				{% if video1 %}
+				<div class="item">
+					<video class="full-span" controls loop muted preload="auto" tabindex="0">
+						<source src="{{ video1 }}" type="video/webm" />
+						If you're seeing this message, your web browser does not support this video type. Please contact your sale rep to get receive this video.
+					</video>
+				</div>
+				{% endif %}
+
+				{% if video2 %}
+				<div class="item">
+				<video class="full-span" controls loop muted preload="auto" tabindex="0">
+					<source src="{{ video2 }}" type="video/webm" />
+					If you're seeing this message, your web browser does not support this video type. Please contact your sale rep to get receive this video.
+				</video>
+				</div>
+				{% endif %}
+
+				{% if video3 %}
+				<div class="item">
+				<video class="full-span" controls loop muted preload="auto" tabindex="0">
+					<source src="{{ video3 }}" type="video/webm" />
+					If you're seeing this message, your web browser does not support this video type. Please contact your sale rep to get receive this video.
+				</video>
+				</div>
+				{% endif %}
+
+				{% if photo1 %}
+				<div class="item">
+					<img src="{{ photo1 }}" alt="{{ strain }} THCa Flower" class="full-span" tabindex="0">
+				</div>
+				{% endif %}
+
+				{% if photo2 %}
+				<div class="item">
+					<img src="{{ photo2 }}" alt="{{ strain }} THCa Flower" class="full-span" tabindex="0">
+				</div>
+				{% endif %}
+
+				{% if photo3 %}
+				<div class="item">
+					<img src="{{ photo3 }}" alt="{{ strain }} THCa Flower" class="full-span" tabindex="0">
+				</div>
+				{% endif %}
+
+				{% if photo4 %}
+				<div class="item">
+					<img src="{{ photo4 }}" alt="{{ strain }} THCa Flower" class="full-span" tabindex="0">
+				</div>
+				{% endif %}
+
+			</div>
+		</div>
+	</article>
+</section>

@@ -1,9 +1,0 @@
----
-strain: zkittles
-profile: indica
-priceLevel: aaa+ indoor exotic
-thca: 25.72%
-photo1: 'https://media.dont.zone/hs/media/img/flower/aaa-plus-indoor-ex_indica_zkittles.jpg'
-linkid: zkittles
-items: 1
----

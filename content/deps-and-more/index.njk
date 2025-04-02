@@ -1,0 +1,11 @@
+---
+title: Deps & More
+layout: layouts/base.njk
+eleventyExcludeFromCollections: true
+desc: Premium Light Assist, Light Deps, and more!
+---
+<div id="page">
+{% include "parts/page-header.njk" %}
+	{% set exoticslist = collections.deps %}
+	{% include "lists/exoticsFeed.njk" %}
+</div>

@@ -1,0 +1,50 @@
+<div id="media-list" class="flex-row">
+	{% for post in exoticslist | reverse %}
+	<article class="post">
+			<header class="flex-column">
+				<div class="flex-row row">
+					<div class="flex-column strain-info">
+						<a href="{{ post.url }}"><h2 class="">{{ post.data.strain }}</h2></a>
+						<h3 class="price-level">{{ post.data.priceLevel }}</h3>
+					</div>
+					<div class="flex-column other-info {% if post.data.profile == "hybrid" %}hybrid{% endif %} {% if post.data.profile == "indica" %}indica{%endif%} {% if post.data.profile == "sativa" %}sativa{% endif %}">
+						<span class="profile">{{ post.data.profile }}</span>
+						<span class="thca center">
+							{{ post.data.thca }} THCa
+						</span>
+					</div>
+				</div>
+				<div class="price-compare flex-row">
+					<p class="center">
+						<strong>Hidden Deals Price</strong><br>
+						{{ post.data.hdPrice }}
+					</p>
+					<p class="center">
+						<span><strong>Regular Price</strong></span>
+						{{ post.data.regPrice }}
+					</p>
+				</div>
+			</header>
+			<div class="media-area">
+					{% if post.data.video1 %}
+					<div class="item">
+					<a href="{{ post.url }}">
+						<video class="full-span" controls loop muted preload="auto" tabindex="0">
+							<source src="{{ post.data.video1 }}" type="video/webm" />
+							If you're seeing this message, your web browser does not support this video type. Please contact your sale rep to get receive this video.
+						</video>
+					</a>
+					</div>
+					{% else %}
+						<div class="item">
+						<a href="{{ post.url }}">
+							<img src="{{ post.data.photo1 }}" alt="{{post.data.strain }} THCa Flower" class="full-span" tabindex="0">
+						</a>
+						</div>
+						{% endif %}
+
+
+			</div>
+	</article>
+	{% endfor %}
+</div>

@@ -1,2 +1,5 @@
-	{% include "layouts/menu.njk" %}
-	{% include "layouts/media.njk" %}
+<section id="homepage">
+	<h2 class="center">NEW FLOWER</h2>
+	{% set exoticslist = collections.exotics %}
+	{% include "lists/exoticsFeed.njk" %}
+</section>
