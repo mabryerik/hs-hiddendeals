@@ -136,6 +136,7 @@ h4 {
 	padding-block: 0.5rem;
 	letter-spacing: 1px;
 	color: var(--font-color-default);
+	line-height: 1;
 }
 
 img {
@@ -432,6 +433,8 @@ main {
 	}
 }
 
+#media-list { width: calc(100% - 2dvw); margin-inline: auto; }
+
 #media-page {
 	width: calc(100% - 2dvw);
 	color: var(--font-color-dark);
@@ -474,6 +477,8 @@ main {
 			align-items: flex-start;
 			align-content: flex-start;
 		}
+
+		& h2 { margin-block: 0 1dvw; }
 
 		& h3 {
 			font-family: 'RobotoCondensed', ui-sans-serif, sans-serif;
@@ -587,7 +592,6 @@ main {
 		}
 	& h2 {
 		font-size: 2rem;
-		padding-block: 0!important;
 		color: var(--font-color-dark);
 
 	}
