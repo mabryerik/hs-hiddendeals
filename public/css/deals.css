@@ -246,7 +246,7 @@ kbd {
 
 header.site-header {
 	width: 100%;
-	background-image: url(/img/background-purple.png);
+	background-image: url(/img/site/background-purple.png);
 	background-size: cover;
 	background-position: bottom;
 	box-shadow: var(--box-shadow-66);
@@ -425,7 +425,7 @@ main {
 	margin-inline: auto;
 	padding: 1rem 2rem;
 	outline: 1px solid rgba(0, 0, 0, 0.1);
-	background-image: url(/img/background-green.png);
+	background-image: url(/img/site/background-green.png);
 	background-size: 300%;
 	background-position: center;
 	color: white;
@@ -478,6 +478,7 @@ main {
 #media-list {
 	width: calc(100% - 2dvw);
 	margin-inline: auto;
+	align-items: stretch;
 }
 
 #media-page {
@@ -535,7 +536,7 @@ main {
 
 		& h2 {
 			margin-block: 0 1dvw;
-			font-size: clamp(1.5rem, 4dvw, 2rem);
+			font-size: clamp(1.5rem, 4dvw, 1.75rem);
 		}
 
 		& h3 {
@@ -838,7 +839,7 @@ main {
 		margin-inline: auto;
 
 		&.flex-row {
-			align-items: stretch !important;
+			align-items: stretch!important;
 			justify-content: space-between;
 			gap: 2dvw !important;
 		}
@@ -885,7 +886,7 @@ main {
 /* footer */
 
 #site-footer {
-	background-image: url(/img/background-purple.png);
+	background-image: url(/img/site/background-purple.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 2rem 1rem 5rem 1rem;
@@ -988,19 +989,19 @@ main {
 	}
 
 	.indicas {
-		background-image: url(/img/background-purple.png);
+		background-image: url(/img/site/background-purple.png);
 	}
 
 	.sativas {
-		background-image: url(/img/background-red.png);
+		background-image: url(/img/site/background-red.png);
 	}
 
 	.hybrids {
-		background-image: url(/img/background-green.png);
+		background-image: url(/img/site/background-green.png);
 	}
 
 	.prices {
-		background-image: url(/img/background-green.png);
+		background-image: url(/img/site/background-green.png);
 		filter: grayscale(100%);
 	}
 

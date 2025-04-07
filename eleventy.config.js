@@ -14,6 +14,15 @@ export default async function(eleventyConfig) {
 		}
 	});
 
+	eleventyConfig.addFilter("capitalizeWords", function(value) {
+		if (typeof value !== 'string') {
+			return ''; // or handle the undefined case as needed
+		}
+
+		return value.replace(/\b\w/g, char => char.toUpperCase());
+	});
+
+
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig

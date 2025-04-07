@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ title or metadata.title }}</title>
+	<title>{{ title or strain | capitalizeWords }}</title>
 	<meta name="description" content="{{ description or metadata.description }}">
 	<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 	{%- css %}{% include "public/css/deals.css" %}{% endcss %}
@@ -27,7 +27,7 @@
 			<div class="page-title">
 				<div class="today">
 					<h2>HIDDEN DEALS</h2>
-					<h3><date>April 1, 2025</date></h3>
+					<h3><date>April 7, 2025</date></h3>
 				</div>
 			</div>
 		</div>

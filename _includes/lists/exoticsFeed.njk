@@ -26,20 +26,21 @@
 				</div>
 			</header>
 			<div class="media-area">
-					{% if post.data.video1 %}
+					{% if post.data.photo1 %}
 					<div class="item">
 					<a href="{{ post.url }}">
-						<video class="full-span" controls loop muted preload="auto" tabindex="0">
-							<source src="{{ post.data.video1 }}" type="video/webm" />
-							If you're seeing this message, your web browser does not support this video type. Please contact your sale rep to get receive this video.
-						</video>
+						<img src="{{ post.data.photo1 }}" alt="{{post.data.strain }} THCa Flower" class="full-span" tabindex="0">
 					</a>
 					</div>
 					{% else %}
 						<div class="item">
 						<a href="{{ post.url }}">
-							<img src="{{ post.data.photo1 }}" alt="{{post.data.strain }} THCa Flower" class="full-span" tabindex="0">
+							<video class="full-span" controls loop muted preload="auto" tabindex="0">
+								<source src="{{ post.data.video1 }}" type="video/webm" />
+								If you're seeing this message, your web browser does not support this video type. Please contact your sale rep to get receive this video.
+							</video>
 						</a>
+
 						</div>
 						{% endif %}
 
