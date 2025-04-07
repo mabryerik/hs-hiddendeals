@@ -508,6 +508,7 @@ main {
 	background-color: whitesmoke;
 	padding: 1rem;
 	width: min(100%, 45ch);
+	max-width: 90ch;
 	margin-inline: auto;
 	margin-block: 0;
 	color: var(--font-color-dark);
