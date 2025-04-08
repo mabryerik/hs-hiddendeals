@@ -6,6 +6,9 @@ layout: layouts/base.njk
 <section id="media-page">
 	<article class="post">
 		<header class="flex-column">
+		{% if oos %}
+			<h3 class="red center">Temporarily out of stock</h3>
+		{% endif %}
 			<div class="flex-row row">
 				<div class="price-compare flex-row">
 					<p class="center">

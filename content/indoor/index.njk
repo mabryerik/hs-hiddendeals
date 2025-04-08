@@ -5,7 +5,7 @@ eleventyExcludeFromCollections: true
 desc: AA-INDOOR, A-INDOOR, and PREMIUM AAA+ INDOOR
 ---
 <div id="page">
-{% include "parts/page-header.njk" %}
-	{% set exoticslist = collections.indoor %}
-	{% include "lists/exoticsFeed.njk" %}
+	{% include "parts/page-header.njk" %}
+	{% include "lists/indoorFeed.njk" %}
+	{% include "lists/indoorNoStock.njk" %}
 </div>

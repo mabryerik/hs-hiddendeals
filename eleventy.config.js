@@ -7,6 +7,45 @@ import pluginFilters from "./_config/filters.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
+	eleventyConfig.addCollection(
+	"exoticsNoStock",
+	function (collectionsApi) {
+		return collectionsApi.getFilteredByTags("exotics", "noStock");
+	}
+	);
+	eleventyConfig.addCollection(
+	"exoticsInStock",
+	function (collectionsApi) {
+		return collectionsApi.getFilteredByTags("exotics", "inStock");
+	}
+	);
+
+	eleventyConfig.addCollection(
+		"indoorNoStock",
+		function (collectionsApi) {
+			return collectionsApi.getFilteredByTags("indoor", "noStock");
+		}
+	);
+	eleventyConfig.addCollection(
+		"indoorInStock",
+		function (collectionsApi) {
+			return collectionsApi.getFilteredByTags("indoor", "inStock");
+		}
+	);
+
+	eleventyConfig.addCollection(
+		"depsNoStock",
+		function (collectionsApi) {
+			return collectionsApi.getFilteredByTags("deps", "noStock");
+		}
+	);
+	eleventyConfig.addCollection(
+		"depsInStock",
+		function (collectionsApi) {
+			return collectionsApi.getFilteredByTags("deps", "inStock");
+		}
+	);
+
 	// Drafts, see also _data/eleventyDataSchema.js
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {

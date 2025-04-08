@@ -1,0 +1,17 @@
+
+<section class="oos">
+{% set posts = collections.depsNoStock %}
+	{% if posts.length > 0 %}
+		<div id="oos-list">
+			<header>
+				<h2 class="oos-title center"> Temporarily Out of Stock</h2>
+				<p class="center">Contact your sales rep (or <a href="/contact/#sales-reps">find one here</a>) to let them know you're interested in any of the strains below.</p>
+			</header>
+			<div class="flex-row">
+			{% for post in posts | reverse %}
+				{% include "parts/flower-list-item.njk" %}
+			{% endfor %}
+			</div>
+		</div>
+	{% endif %}
+</section>

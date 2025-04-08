@@ -4,7 +4,7 @@ layout: layouts/base.njk
 eleventyExcludeFromCollections: true
 ---
 <div id="page">
-{% include "parts/page-header.njk" %}
-	{% set exoticslist = collections.exotics %}
+	{% include "parts/page-header.njk" %}
 	{% include "lists/exoticsFeed.njk" %}
+	{% include "lists/exoticsNoStock.njk" %}
 </div>
