@@ -13,7 +13,7 @@
 	</style>
 </head>
 
-<body>
+<body tabindex="-1">
 	<a href="#skip" class="visually-hidden">Skip to main content</a>
 	<div class="wrapper">
 		<header class="site-header">
@@ -31,12 +31,6 @@
 				</div>
 			</div>
 		</div>
-		<nav class="flex-row">
-			<a href="/menu" class="focus">Menu </a>
-			<a href="/indoor-exotics">Indoor Exotics</a>
-			<a href="/indoor">Indoor</a>
-			<a href="/deps-and-more">Deps & More</a>
-			<a href="/coas">COA</a>
-			<a href="/contact">Contact</a>
-		</nav>
+		 {% include "parts/nav.njk" %}
+	{#	{% include "parts/nav-dropdown.njk" %} #}
 		</header>

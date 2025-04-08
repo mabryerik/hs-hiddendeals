@@ -291,6 +291,7 @@ header.site-header {
 			margin-inline: auto;
 			margin-top: 0.5rem;
 			width: calc(100% - 2dvw);
+			height: auto;
 		}
 	}
 
@@ -327,18 +328,98 @@ header.site-header {
 	font-size: 1rem;
 }
 
+.dropdown__title {
+	background-color: transparent;
+	border: none;
+	font-family: inherit;
+	text-transform: uppercase;
+	text-shadow: var(--text-shadow);
+	display: inline-flex;
+	align-items: center;
+
+	&:after {
+		content: "";
+		border: 0.35rem solid blue;
+		border-top-color: rgba(blue, 0.95);
+		margin-left: 0.25em;
+		transform: translateY(0.15em);
+	}
+}
+
+.dropdown {
+	position: relative;
+
+	&:hover,
+	&:focus-within {
+		.dropdown__menu {
+			opacity: 1;
+			transform: rotateX(0) translateX(-50%);
+			visibility: visible;
+		}
+	}
+
+	& .dropdown__menu {
+		background-color: #fff;
+		border-radius: 4px;
+		box-shadow: 0 0.15em 0.25em rgba(black, 0.25);
+		padding: 0.5em 0;
+		min-width: 15ch;
+		position: absolute;
+		top: calc(100% - 0.25rem);
+		left: 50%;
+		transform: translateX(-50%);
+		transform: rotateX(-90deg) translateX(-50%);
+		transform-origin: top center;
+		opacity: 0.3;
+		transition: 280ms all 120ms ease-out;
+
+		& a[href] {
+			color: #444;
+			display: block;
+			padding: 0.5em;
+		}
+	}
+}
+
 nav {
 	background-color: rgba(255, 255, 255, 0.1);
-	overflow: hidden;
 	text-align: center;
 	text-transform: uppercase;
 	font-family: 'RobotoCondensed', ui-sans-serif, sans-serif;
 	backdrop-filter: blur(3px);
 	letter-spacing: 1px;
 	font-weight: bold;
+	&.nav-grid {
+		display: grid;
+		place-items: center;
+	}
+
+	& ul {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		display: grid;
+		grid-auto-flow: column;
+
+		& li {
+			list-style-type: none;
+			margin: 0 0.5rem;
+			padding: 0;
+			& a[href], .dropdown__title {
+				text-decoration: none;
+				text-align: center;
+				display: inline-block;
+				color: var(--font-color-secondary);
+				font-size: 0.75rem;
+			}
+			& > a[href], .dropdown__title {
+				padding: 1rem 0.5rem;
+			}
+		}
+	}
 
 	& a[href] {
-		display: block;
+	 	display: block;
 		text-decoration: none;
 		padding: 0.5rem 0.5rem;
 		color: white;
@@ -358,7 +439,7 @@ nav {
 		& .focus {
 			color: var(--font-color-secondary) !important;
 		}
-	}
+	 }
 }
 
 #homepage h2.center {
