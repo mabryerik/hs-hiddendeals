@@ -3,4 +3,5 @@ export default {
 	url: "https://bulkthca.deals/",
 	language: "en",
 	description: "BULK THCA DEALS",
+	favicon: "favicon.ico",
 }
