@@ -28,9 +28,7 @@
 	<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 	{%- css %}{% include "public/css/deals.css" %}{% endcss %}
 	<style>
-		{
-			% getBundle "css" %
-		}
+		{% getBundle "css" %}
 	</style>
 </head>
 
