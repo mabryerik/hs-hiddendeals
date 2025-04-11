@@ -3,16 +3,20 @@
 
 <head>
 
-<script src="https://analytics.ahrefs.com/analytics.js" data-key="Crnhdv6o5XX550LfOrdmLg" async></script>
+	<script src="https://analytics.ahrefs.com/analytics.js" data-key="Crnhdv6o5XX550LfOrdmLg" async></script>
 
-<script type="text/javascript">
-		(function(c,l,a,r,i,t,y){
-				c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-				t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-				y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+	<script type="text/javascript">
+		(function(c, l, a, r, i, t, y) {
+			c[a] = c[a] || function() {
+				(c[a].q = c[a].q || []).push(arguments)
+			};
+			t = l.createElement(r);
+			t.async = 1;
+			t.src = "https://www.clarity.ms/tag/" + i;
+			y = l.getElementsByTagName(r)[0];
+			y.parentNode.insertBefore(t, y);
 		})(window, document, "clarity", "script", "r2lpt0pqvu");
-</script>
-
+	</script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ title or strain | capitalizeWords }}</title>
@@ -24,39 +28,32 @@
 	<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 	{%- css %}{% include "public/css/deals.css" %}{% endcss %}
 	<style>
-		{% getBundle "css" %}
+		{
+			% getBundle "css" %
+		}
 	</style>
 </head>
 
 <body tabindex="-1">
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FF0X1ZXWQG"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'G-FF0X1ZXWQG');
-</script>
-
 	<a href="#skip" class="visually-hidden">Skip to main content</a>
 	<div class="wrapper">
 		<header class="site-header">
-		<div class="notice">
-			<strong>Hemp products only.</strong> Products on this site contain a value of 0.3% or less Δ9THC (or no more than 0.3% Δ9THC).
-		</div>
-		<div class="inner-header flex-row">
-			<div class="site-title">
-				<a href="/">{% include "parts/logo.njk" %}</a>
+			<div class="notice">
+				<strong>Hemp products only.</strong> Products on this site contain a value of 0.3% or less Δ9THC (or no more than 0.3% Δ9THC).
 			</div>
-			<div class="page-title">
-				<div class="today">
-					<h2>HIDDEN DEALS</h2>
-					<h3><date>April 8, 2025</date></h3>
+			<div class="inner-header flex-row">
+				<div class="site-title">
+					<a href="/">{% include "parts/logo.njk" %}</a>
+				</div>
+				<div class="page-title">
+					<div class="today">
+						<h2>HIDDEN DEALS</h2>
+						<h3>
+							<date>April 11, 2025</date>
+						</h3>
+					</div>
 				</div>
 			</div>
-		</div>
-		 {% include "parts/nav.njk" %}
-	{#	{% include "parts/nav-dropdown.njk" %} #}
+			{% include "parts/nav.njk" %}
+			{#	{% include "parts/nav-dropdown.njk" %} #}
 		</header>
