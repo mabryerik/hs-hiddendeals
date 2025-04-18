@@ -296,7 +296,7 @@ header.site-header {
 	}
 
 	@supports (paint-order: stroke fill) {
-		.today {
+		.today h2 {
 			-webkit-text-stroke: 8px black;
 			paint-order: stroke fill;
 			text-shadow: none !important;
