@@ -1234,9 +1234,6 @@ h3 {
 
 .menu-nav {
 	background-color: hsla(123, 50%, 41%, 1);
-	background-image: url(/img/background-green.png);
-	background-size: 200%;
-	background-position: center;
 	color: white;
 	font-size: 0.75rem;
 	justify-content: center;
