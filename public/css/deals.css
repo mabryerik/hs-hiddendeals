@@ -928,7 +928,6 @@ main {
 			padding: 0;
 			& li {
 				& a[href] {
-					text-transform: lowercase!important;
 				}
 			}
 		}
@@ -1383,7 +1382,7 @@ h3 {
 		& li {
 			list-style-type: none;
 			& a[href] {
-				text-transform: lowercase!important;
+				text-transform: uppercase!important;
 			}
 		}
 	}

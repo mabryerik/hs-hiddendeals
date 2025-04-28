@@ -1,25 +1,19 @@
----js
-// <script>
-const pagination = {
-	data: "collections",
-	size: 1,
-	alias: "tag",
-	filter: ["all", "posts"],
-	// addAllPagesToCollections: true,
-};
-
-const eleventyExcludeFromCollections = true;
-
-const eleventyComputed = {
-	title: "Tagged '{{ tag }}'",
-	permalink: function(data) {
-		return `/tags/${this.slugify(data.tag)}/`;
-	}
-};
 ---
-<h1>Tagged “{{ tag }}”</h1>
+layout: layouts/page.njk
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+---
 
-{% set postslist = collections[ tag ] %}
-{% include "postslist.njk" %}
+<h1 style="color: var(--font-color-dark); padding-bottom: 2rem;" class="center">{{ tag }}</h1>
 
-<p>See <a href="tags.njk">all tags</a>.</p>
+<ul class="coa-list">
+{% set taglist = collections[ tag ] %}
+{% for post in taglist | sort(false, false, 'data.strain') %}
+	<li style="text-transform: uppercase;">
+		<a href="{{ post.url }}">{% if post.data.title %}{{ post.data.title | upper }} {% else %} {{ post.data.strain | upper }}{% endif %}</a>
+	</li>
+{% endfor %}
+</ul>

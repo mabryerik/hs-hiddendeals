@@ -7,6 +7,9 @@ import pluginFilters from "./_config/filters.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
+	eleventyConfig.addFilter('sorteddd', values => {
+		return values.slice().sort((a, b) => a.data.strain.localeCompare(b.data.strain))
+	});
 	eleventyConfig.addCollection(
 	"exoticsNoStock",
 	function (collectionsApi) {
