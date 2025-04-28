@@ -28,7 +28,7 @@
 				{% if post.data.photo1 %}
 				<div class="item">
 				<a href="{{ post.url }}">
-					<img src="{{ post.data.photo1 }}" alt="{{post.data.strain }} THCa Flower" class="full-span" tabindex="0">
+					<img eleventy:optional src="{{ post.data.photo1 }}" alt="{{post.data.strain }} THCa Flower" class="full-span" tabindex="0">
 				</a>
 				</div>
 				{% else %}
