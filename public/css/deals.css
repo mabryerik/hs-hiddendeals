@@ -66,6 +66,13 @@ textarea:not([rows]) {
 	min-height: 10em;
 }
 
+hr {
+	margin-block: 2rem;
+	border-top: 1px solid black;
+	border-bottom: none;
+}
+
+
 :target {
 	scroll-margin-block: 5ex;
 }
