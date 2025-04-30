@@ -900,8 +900,9 @@ main {
 		margin-block: 3dvw !important;
 	}
 
-	.header-nav a[href] {
-
+	.inner-nav {
+		gap: 0.5rem!important;
+		letter-spacing: 1px!important;
 	}
 
 	.home .flex-row {
@@ -946,8 +947,14 @@ main {
 			padding-block: 0 0.5rem!important;
 		}
 
-		h3 {
+		h3:not(.price-level) {
 			padding-block: 0.5rem 0!important;
+		}
+
+		.price-level {
+			margin: 0;
+			padding: 0;
+			text-shadow: var(--text-shadow);
 		}
 
 		h2, h3 {
@@ -1013,6 +1020,12 @@ main {
 
 	#site-footer p {
 		font-size: 0.75rem !important;
+	}
+
+	#media-page {
+		& .other-info .thca {
+			font-size: 1rem!important;
+		}
 	}
 
 	#media-list {
@@ -1423,6 +1436,8 @@ h3 {
 		background-color: rgb(241, 241, 241);
 		margin-block: 0 2dvh;
 		box-shadow: var(--box-shadow-66);
+		font-size: clamp(1rem, 3dvw, 2rem)!important;
+		text-transform: uppercase;
 		a[href] {
 			padding-inline: 0.25rem;
 			display: inline-block;
