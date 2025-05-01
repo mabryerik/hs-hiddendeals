@@ -17,7 +17,7 @@ layout: layouts/base.njk
 					</p>
 					<p class="center">
 						<span><strong>Regular Price</strong></span>
-						{{ regPrice }}
+						<span class="reg">{{ regPrice }}</span>
 					</p>
 				</div>
 				<div class="flex-column other-info {% if profile == "hybrid" %}hybrid{% endif %} {% if profile == "indica" %}indica{%endif%} {% if profile == "sativa" %}sativa{% endif %}">
@@ -57,25 +57,25 @@ layout: layouts/base.njk
 
 				{% if photo1 %}
 				<div class="item">
-					<img src="{{ photo1 }}" alt="{{ strain }} THCa Flower" class="full-span" tabindex="0">
+					<a href="{{ photo1 }}"><img src="{{ photo1 }}" alt="{{ strain }} THCa Flower" class="full-span" tabindex="0"></a>
 				</div>
 				{% endif %}
 
 				{% if photo2 %}
 				<div class="item">
-					<img src="{{ photo2 }}" alt="{{ strain }} THCa Flower" class="full-span" tabindex="0">
+					<a href="{{ photo2 }}"><img src="{{ photo2 }}" alt="{{ strain }} THCa Flower" class="full-span" tabindex="0"></a>
 				</div>
 				{% endif %}
 
 				{% if photo3 %}
 				<div class="item">
-					<img src="{{ photo3 }}" alt="{{ strain }} THCa Flower" class="full-span" tabindex="0">
+					<a href="{{ photo3 }}"><img src="{{ photo3 }}" alt="{{ strain }} THCa Flower" class="full-span" tabindex="0"></a>
 				</div>
 				{% endif %}
 
 				{% if photo4 %}
 				<div class="item">
-					<img src="{{ photo4 }}" alt="{{ strain }} THCa Flower" class="full-span" tabindex="0">
+					<a href="{{ photo4 }}"><img src="{{ photo4 }}" alt="{{ strain }} THCa Flower" class="full-span" tabindex="0"></a>
 				</div>
 				{% endif %}
 
