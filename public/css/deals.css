@@ -101,7 +101,7 @@ hr {
 	--font-color-default: whitesmoke;
 	--font-color-dark: black;
 	--font-color-secondary: rgb(255, 255, 77);
-	--border-radius: 0.33rem;
+	--border-radius: 0.25rem;
 }
 
 .visually-hidden {
@@ -169,7 +169,7 @@ main a[href] {
 
 .tip {
 	width: min(100%, 90ch) !important;
-	border-radius: 0.25rem;
+	border-radius: var(--border-radius);
 	letter-spacing: 1px;
 	margin-block: 1dvw 0;
 	line-height: 1;
@@ -199,7 +199,7 @@ main a[href] {
 kbd {
 	background-color: rgba(255, 255, 255, 0.5);
 	padding: 0.25rem 0.5rem;
-	border-radius: 0.25rem;
+	border-radius: var(--border-radius);
 	font-size: 0.5rem;
 	text-transform: uppercase;
 	margin-inline: 0.5ch;
@@ -604,11 +604,6 @@ main {
 		font-size: 1rem;
 	}
 
-	& .fake-header {
-		font-weight: bold;
-		letter-spacing: 1px;
-	}
-
 	& .price-level {
 		text-shadow: var(--text-shadow);
 		font-size: 1.5rem;
@@ -882,7 +877,7 @@ main {
 	& .thca {
 		font-weight: 900;
 		background-color: whitesmoke;
-		border-radius: 0.25rem;
+		border-radius: var(--border-radius);
 		padding: 0.5rem;
 		font-size: 1.25rem;
 		display: inline-flex;
@@ -1574,7 +1569,7 @@ h3 {
 		outline: 1px solid rgba(127, 127, 127, 0.1);
 		padding: 1dvh 2dvh;
 		text-align: center;
-		border-radius: 0.25rem;
+		border-radius: var(--border-radius);
 		background-color: rgb(241, 241, 241);
 		margin-block: 0 2dvh;
 		box-shadow: var(--box-shadow-66);
