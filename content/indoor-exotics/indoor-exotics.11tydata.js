@@ -5,4 +5,5 @@ export default {
 		"exotics"
 	],
 	"layout": "layouts/post-media.njk",
+	date: "git Last Modified",
 };
