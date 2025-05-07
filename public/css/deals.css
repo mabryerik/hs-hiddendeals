@@ -516,7 +516,7 @@ main {
 
 	.content {
 		border-radius: var(--border-radius);
-		width: calc(100% - 1rem);
+		width: min(100% - 1rem, 135ch);
 		margin-inline: auto;
 	}
 
