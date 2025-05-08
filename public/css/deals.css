@@ -156,7 +156,6 @@ blockquote {
 main a[href] {
 	text-decoration: underline;
 	text-decoration-color: blue;
-	text-decoration-thickness: 3px;
 
 	&:hover {
 		text-decoration: none;
@@ -299,16 +298,14 @@ header.site-header {
 
 				h3 {
 					text-shadow: var(--text-shadow);
-					font-size: clamp(1rem, 3dvw, 1.25rem);
-					font-family: var(--font-body-family);
-					text-transform: capitalize;
+					font-size: 1rem;
+					text-transform: uppercase;
 				}
 
 				h4 {
 					text-align: center;
 					text-shadow: var(--text-shadow);
 					font-size: clamp(1rem, 3dvw, 1.25rem);
-					font-family: var(--font-body-family);
 				}
 			}
 		}
@@ -516,7 +513,7 @@ main {
 
 	.content {
 		border-radius: var(--border-radius);
-		width: min(100% - 1rem, 135ch);
+		width: min(100% - 1rem, 150ch);
 		margin-inline: auto;
 	}
 
@@ -524,12 +521,12 @@ main {
 		background-color: whitesmoke;
 		background-image: linear-gradient(rgb(255, 255, 255), rgb(239, 239, 239));
 		color: var(--font-color-dark);
-		width: min(100% - 2dvw, 90ch);
+		width: min(100% - 1rem, 135ch);
 		margin-inline: auto;
-		margin-block: 2rem 1rem;
+		margin-block: 1rem;
 		padding-inline: 4dvw;
 		padding-block: 4dvw 10dvw;
-		min-height: 75dvh;
+		min-height: 50dvh;
 		box-shadow: var(--box-shadow-66);
 
 		& h2 {
@@ -679,6 +676,7 @@ main {
 	font-weight: normal;
 	letter-spacing: 0;
 	line-height: 1.3;
+
 	& a[href] {
 		text-decoration-color: white;
 		text-decoration-thickness: 1px;
@@ -800,6 +798,7 @@ main {
 					font-size: 1.33rem;
 					font-weight: bold;
 					font-family: 'Cooper', ui-sans-serif, sans-serif;
+
 					span {
 						font-family: 'RobotoCondensed', ui-sans-serif, sans-serif;
 						display: block;
@@ -826,12 +825,15 @@ main {
 			width: 66%;
 			flex-grow: 1;
 			padding-right: 1dvw;
+
 			& a[href] {
 				text-decoration: none;
+
 				&:hover {
 					text-decoration: underline;
 				}
 			}
+
 			& h2::after {
 				content: " »";
 				display: inline;
@@ -972,16 +974,16 @@ main {
 @media (max-width: 500px) {
 
 	#homepage {
-		margin-top: 0!important;
+		margin-top: 0 !important;
 
 		.media-list .post {
-			width: calc(100% - 1rem)!important;
-			margin-inline: auto!important;
+			width: calc(100% - 1rem) !important;
+			margin-inline: auto !important;
 		}
 	}
 
 	.page-header .strain-desc {
-		padding-top: 1rem!important;
+		padding-top: 1rem !important;
 		font-size: 0.8rem;
 		line-height: 1.3;
 	}
@@ -1021,7 +1023,8 @@ main {
 	}
 
 	.intro {
-		padding: 2rem!important;
+		padding: 2rem !important;
+
 		p {
 			font-size: 0.75rem !important;
 		}
@@ -1118,12 +1121,14 @@ main {
 		& .other-info .thca {
 			font-size: 1rem !important;
 		}
+
 		& .post {
-			width: calc(100% - 1rem)!important;
-			margin-inline: auto!important;
+			width: calc(100% - 1rem) !important;
+			margin-inline: auto !important;
 		}
+
 		& .post:first-of-type {
-			margin-top: 1rem!important;
+			margin-top: 1rem !important;
 		}
 	}
 
@@ -1132,7 +1137,7 @@ main {
 		margin-inline: auto;
 
 		.post:first-of-type {
-			margin-top: 1rem!important;
+			margin-top: 1rem !important;
 		}
 
 		&.flex-row {
@@ -1167,34 +1172,34 @@ main {
 	}
 
 	.minimum {
-		padding-top: 0!important;
+		padding-top: 0 !important;
 	}
 
 	#page .page-header:has(#contact-us) {
 		.desc {
-			font-size: 1rem!important;
+			font-size: 1rem !important;
 		}
 	}
 
 	#page .page-header {
-		box-shadow: var(--box-shadow-66)!important;
+		box-shadow: var(--box-shadow-66) !important;
 		z-index: 1;
 		position: relative;
 	}
 
 	#page .page-content {
-		width: calc(100% - 1rem)!important;
-		margin-top: 0!important;
-		border-top-right-radius: 0!important;
-		border-top-left-radius: 0!important;
+		width: calc(100% - 1rem) !important;
+		margin-top: 0 !important;
+		border-top-right-radius: 0 !important;
+		border-top-left-radius: 0 !important;
 	}
 
 	.contact-sheet {
 		.box {
-			margin-block: 0.5rem 0!important;
-			margin-inline: auto!important;
-			width: calc(100% - 1rem)!important;
-			flex-grow: 0!important;
+			margin-block: 0.5rem 0 !important;
+			margin-inline: auto !important;
+			width: calc(100% - 1rem) !important;
+			flex-grow: 0 !important;
 		}
 	}
 
@@ -1429,7 +1434,7 @@ main {
 			.strain-name {
 				& a[href] {
 					text-decoration-line: underline;
-					text-decoration-thickness: 3px;
+					text-decoration-thickness: 1px;
 					text-decoration-color: blue;
 				}
 			}
@@ -1515,21 +1520,25 @@ h3 {
 .contact-sheet {
 	color: var(--font-color-dark);
 	;
-	width: min(100%, 90ch);
+	width: min(100% - 1rem, 100ch);
 	margin-inline: auto;
 
 	table {
 		width: 100%;
+
 		th {
 			text-align: left;
+
 			&.name {
 				font-family: var(--font-heading-family);
 				text-transform: uppercase;
 			}
 		}
+
 		td {
 			padding: 0.33rem;
 		}
+
 		td:nth-of-type(odd) {
 			width: 33%;
 			font-weight: 700;
@@ -1562,8 +1571,8 @@ h3 {
 		border-radius: var(--border-radius);
 		flex-grow: 1;
 
-		& span {
-			display: block;
+		& table tr td {
+
 
 			&.name {
 				font-weight: 500;
@@ -1571,13 +1580,12 @@ h3 {
 				font-family: 'Cooper', ui-sans-serif, sans-serif;
 			}
 
-			& a[href^="tel:"] {
+			& a[href^="tel:"], a[href^="mailto:"] {
 				font-weight: 500;
-				color: rgb(99, 72, 157);
-				text-decoration: none;
-
+				color: rgb(99, 72, 157)!important;
+				text-decoration: underline;
 				&:hover {
-					text-decoration: underline;
+					text-decoration: none;
 				}
 			}
 		}
@@ -1615,7 +1623,6 @@ h3 {
 
 			&:hover {
 				text-decoration: underline;
-				text-decoration-thickness: 3px;
 			}
 		}
 	}
