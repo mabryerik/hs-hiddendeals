@@ -22,6 +22,9 @@
 	<title>{{ title or strain | capitalizeWords }}</title>
 	<meta name="description" content="{{ description or metadata.description }}">
 	<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
 	{%- css %}{% include "public/css/deals.css" %}{% endcss %}
 	<style>
 		{% getBundle "css" %}

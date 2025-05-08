@@ -799,7 +799,7 @@ main {
 					font-weight: bold;
 					font-family: 'Cooper', ui-sans-serif, sans-serif;
 
-					span {
+					span:first-of-type {
 						font-family: 'RobotoCondensed', ui-sans-serif, sans-serif;
 						display: block;
 						padding-top: 1dvw;
@@ -945,7 +945,7 @@ main {
 			position: relative;
 
 			&:hover {
-				transform: scale(1.05);
+				transform: scale(1.025);
 				transition: transform 100ms ease-in;
 				z-index: 99;
 				box-shadow: 0 0 15px rgba(0, 0, 0, 0.66);
