@@ -572,7 +572,7 @@ main {
 
 .page-header {
 	padding: 3rem 2rem;
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
 }
 
 .page-header:has(.price-level) {
@@ -627,6 +627,7 @@ main {
 #page {
 
 	.page-header {
+		margin-bottom: 0;
 
 		.page-title {
 			font-size: 2rem;
@@ -634,6 +635,10 @@ main {
 			text-shadow: var(--text-shadow);
 		}
 	}
+}
+
+#media-list {
+	margin-block: 1rem 0;
 }
 
 #media-list,
@@ -688,7 +693,7 @@ main {
 	color: var(--font-color-dark);
 
 	.post {
-		width: min(100%, 95ch);
+		width: min(100%, 150ch);
 		margin-top: 2dvw;
 
 		header {

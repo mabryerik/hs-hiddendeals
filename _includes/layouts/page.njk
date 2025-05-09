@@ -1,8 +1,9 @@
 ---
 layout: layouts/base.njk
 ---
-
-{% include "parts/page-header.njk" %}
-<div class="content page-content">
-{{ content | safe }}
+<div id="page">
+	{% include "parts/generic-header.njk" %}
+	<div class="content page-content">
+		{{ content | safe }}
+	</div>
 </div>
