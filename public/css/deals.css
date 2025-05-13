@@ -693,8 +693,9 @@ main {
 	color: var(--font-color-dark);
 
 	.post {
-		width: min(100%, 150ch);
+		width: 100%;
 		margin-top: 2dvw;
+
 
 		header {
 			.flex-row {
