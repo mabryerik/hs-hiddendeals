@@ -4,22 +4,22 @@ import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import pluginFilters from "./_config/filters.js";
+import pluginSEO from "eleventy-plugin-seo";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
 	eleventyConfig.addCollection(
-	"exoticsNoStock",
+		"exoticsNoStock",
 	function (collectionsApi) {
 		return collectionsApi.getFilteredByTags("exotics", "noStock");
 	}
 	);
 	eleventyConfig.addCollection(
-	"exoticsInStock",
+		"exoticsInStock",
 	function (collectionsApi) {
 		return collectionsApi.getFilteredByTags("exotics", "inStock");
 	}
 	);
-
 	eleventyConfig.addCollection(
 		"indoorNoStock",
 		function (collectionsApi) {
@@ -32,7 +32,6 @@ export default async function(eleventyConfig) {
 			return collectionsApi.getFilteredByTags("indoor", "inStock");
 		}
 	);
-
 	eleventyConfig.addCollection(
 		"depsNoStock",
 		function (collectionsApi) {
@@ -46,7 +45,6 @@ export default async function(eleventyConfig) {
 		}
 	);
 
-	// Drafts, see also _data/eleventyDataSchema.js
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
 			return false;
@@ -115,6 +113,7 @@ export default async function(eleventyConfig) {
 			base: "https://bulkthca.deals/"
 		}
 	});
+eleventyConfig.addPlugin(pluginSEO);
 
 	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
@@ -138,13 +137,10 @@ export default async function(eleventyConfig) {
 	// Filters
 	eleventyConfig.addPlugin(pluginFilters);
 
-	eleventyConfig.addPlugin(IdAttributePlugin, {
-	});
+
 };
 
 export const config = {
-	// Control which files Eleventy will process
-	// e.g.: *.md, *.njk, *.html, *.liquid
 	templateFormats: [
 		"md",
 		"njk",
@@ -152,18 +148,12 @@ export const config = {
 		"liquid",
 		"11ty.js",
 	],
-
-	// Pre-process *.md files with: (default: `liquid`)
 	markdownTemplateEngine: "njk",
-
-	// Pre-process *.html files with: (default: `liquid`)
 	htmlTemplateEngine: "njk",
-
-	// These are all optional:
 	dir: {
-		input: "content",          // default: "."
-		includes: "../_includes",  // default: "_includes" (`input` relative)
-		data: "../_data",          // default: "_data" (`input` relative)
+		input: "content",
+		includes: "../_includes",
+		data: "../_data",
 		output: "_site"
 	},
 };

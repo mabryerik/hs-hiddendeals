@@ -118,9 +118,11 @@ html {
 	color: var(--font-color-default);
 	font-size: var(--font-body-size);
 	scroll-behavior: smooth;
-	background-image: linear-gradient(hsla(0, 0%, 16%, 1), hsla(360, 1%, 11%, 1));
+	background-image: linear-gradient(hsla(0, 0%, 15%, 1), hsla(0, 0%, 8%, 1));
+	background-color: hsla(0, 0%, 15%, 1);
 	background-size: cover;
 	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
 
 body {
@@ -164,6 +166,42 @@ main a[href] {
 
 .page-content a[href] {
 	text-decoration-thickness: 1px;
+}
+
+.full-width {
+	width: 100%;
+	margin-block: 1rem 2rem;
+	border-collapse: collapse;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	tbody {
+
+	}
+	th {
+		text-align: left;
+	}
+	th:first-of-type {
+		border-top-left-radius: 0.5rem;
+		overflow: hidden;
+	}
+	th, td {
+		padding: 0.5rem;
+		color: black;
+	}
+	.profile {
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+	}
+}
+
+.profile.hybrid {
+	background-color: rgba(122, 193, 67, 0.66);
+}
+
+.profile.indica {
+	background-color: rgba(149, 117, 180, 0.66);
+}
+
+.profile.sativa {
+	background-color: rgba(225, 34, 38, 0.66);
 }
 
 .tip {
@@ -228,13 +266,43 @@ kbd {
 }
 
 .red {
-	color: rgba(195, 30, 30, 1);
+	color: rgba(195, 30, 30, 1)!important;
 }
 
 h3.red {
 	margin-block: 1.5dvh 2dvh !important;
 	width: 100%;
 	font-family: 'Cooper' !important;
+}
+
+.specials-page {
+	.flex-row {
+		align-items: flex-start;
+		gap: 1rem;
+		section {
+			flex-grow: 1;
+			width: min(100%, 45ch);
+			header.flex-row {
+				flex-wrap: nowrap;
+			}
+		}
+	}
+	header .price {
+		.red {
+			font-size: 3rem;
+		}
+	}
+	.flex-column {
+		align-items: center;
+		justify-content: center;
+		gap: 0;
+		margin-block: 1rem;
+		h2, h3 {
+			margin-block: 0;
+			padding-block: 0!important;
+			line-height: 1;
+		}
+	}
 }
 
 .notice {
@@ -420,7 +488,7 @@ nav {
 	font-family: 'RobotoCondensed', ui-sans-serif, sans-serif;
 	backdrop-filter: blur(1px);
 	font-weight: bold;
-	padding: 0.75dvh;
+	padding: 0.5dvh;
 
 	.inner-nav {
 		max-width: 90ch;
@@ -570,7 +638,7 @@ main {
 }
 
 .home .intro {
-	padding: 3rem 2rem;
+	padding: 2rem 1.5rem;
 }
 
 .page-header {
@@ -638,6 +706,112 @@ main {
 			font-size: 2rem;
 			margin-block: 0;
 			text-shadow: var(--text-shadow);
+		}
+	}
+}
+
+.homepage {
+	width: min(100% - 1rem, 120ch);
+	margin-inline: auto;
+}
+
+section.featured:nth-of-type(1) {
+	background-image: url(/img/site/background-red.png);
+}
+
+section.featured:nth-of-type(2) {
+	background-image: url(/img/site/background-purple.png);
+}
+
+section.featured:nth-of-type(3) {
+	background-image: url(/img/site/background-green.png);
+}
+
+.featured {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: var(--border-radius);
+	margin-block: 1rem;
+	padding-bottom: 1rem;
+	.section-header h2 {
+		color: white;
+		letter-spacing: 2px;
+		font-size: 2rem;
+		margin-left: 1rem;
+		margin-block: 0;
+		padding: 0;
+		text-shadow: 0 2px 0 black;
+		span {
+			color: yellow;
+		}
+	}
+	header {
+		padding: 2rem 0 1rem 0;
+
+	}
+	footer {
+		text-align: center;
+		margin-block: 1rem 0;
+		margin-inline: 0 1rem;
+
+		a[href] {
+			border-radius: var(--border-radius);
+			overflow: hidden;
+			display:  inline-flex;
+			background-color: yellow;
+			color: black;
+			padding: 1rem 2rem;
+			text-decoration: none;
+			transition:
+				background-color 200ms ease-out;
+			&:hover {
+				background-color: white;
+				color: black;
+				outline: 2px solid yellow;
+				transition:
+					background-color 100ms ease-in;
+			}
+		}
+	}
+	.post {
+		width: min(100%, 35ch);
+		padding: 0.75rem;
+		background-color: rgba(255, 255, 255, 0.8);
+		backdrop-filter: blur(3px) brightness(200%);
+		header {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		.flex-row {
+			gap: 0.5rem;
+			margin-bottom: 0.5rem;
+		}
+		.price-compare {
+			margin-bottom: 0.5rem;
+		}
+		.strain-info {
+			h2 {
+				font-size: calc(1rem + 6px);
+				text-align: left;
+				margin-bottom: 0.5rem;
+				line-height: 0.9;
+			}
+			h3 {
+				text-align: left;
+			}
+		}
+		.other-info {
+			box-shadow: none;
+			.profile {
+				font-size: 1rem;
+			}
+			.thca {
+				line-height: 0.9;
+			}
+		}
+		.price-compare {
+			box-shadow: none;
 		}
 	}
 }
