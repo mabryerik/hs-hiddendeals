@@ -21,6 +21,42 @@ export default async function(eleventyConfig) {
 	}
 	);
 	eleventyConfig.addCollection(
+		"aaaPlusPlusExoticsInStock",
+	function (collectionsApi) {
+		return collectionsApi.getFilteredByTags("exotics", "inStock", "aaa-plus-plus");
+	}
+	);
+	eleventyConfig.addCollection(
+		"aaaPlusExoticsInStock",
+	function (collectionsApi) {
+		return collectionsApi.getFilteredByTags("exotics", "inStock", "aaa-plus");
+	}
+	);
+	eleventyConfig.addCollection(
+		"aaaExoticsInStock",
+	function (collectionsApi) {
+		return collectionsApi.getFilteredByTags("exotics", "inStock", "aaa");
+	}
+	);
+	eleventyConfig.addCollection(
+		"premiumIndoorExoticsInStock",
+	function (collectionsApi) {
+		return collectionsApi.getFilteredByTags("exotics", "inStock", "premium-indoor-exotics");
+	}
+	);
+	eleventyConfig.addCollection(
+		"mediumsExoticsInStock",
+	function (collectionsApi) {
+		return collectionsApi.getFilteredByTags("exotics", "inStock", "mediums");
+	}
+	);
+	eleventyConfig.addCollection(
+		"smallsExoticsInStock",
+	function (collectionsApi) {
+		return collectionsApi.getFilteredByTags("exotics", "inStock", "smalls");
+	}
+	);
+	eleventyConfig.addCollection(
 		"indoorNoStock",
 		function (collectionsApi) {
 			return collectionsApi.getFilteredByTags("indoor", "noStock");

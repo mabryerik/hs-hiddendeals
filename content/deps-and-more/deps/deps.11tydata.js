@@ -1,6 +1,8 @@
 export default {
 	tags: [
-		"deps"
+		"deps",
+		"flower",
+		"posts"
 	],
 	date: "git Last Modified",
 };
