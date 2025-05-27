@@ -17,7 +17,7 @@
 				<h2 id="aaa-plusplus">AAA++ INDOOR EXOTICS</h2>
 			</header>
 			<div id="media-list" class="featured flex-row">
-				{% for post in collections.aaaPlusPlusExoticsInStock %}
+				{% for post in collections.aaaPlusPlusExoticsInStock | reverse %}
 				{% include "parts/flower-list-item.njk" %}
 				{% endfor %}
 			</div>
@@ -28,7 +28,7 @@
 				<h2 id="aaa-plus">AAA+ INDOOR EXOTICS</h2>
 			</header>
 			<div id="media-list" class="featured flex-row">
-				{% for post in collections.aaaPlusExoticsInStock %}
+				{% for post in collections.aaaPlusExoticsInStock | reverse %}
 				{% include "parts/flower-list-item.njk" %}
 				{% endfor %}
 			</div>
@@ -39,7 +39,7 @@
 				<h2 id="aaa">AAA INDOOR EXOTICS</h2>
 			</header>
 			<div id="media-list" class="featured flex-row">
-				{% for post in collections.aaaExoticsInStock %}
+				{% for post in collections.aaaExoticsInStock | reverse %}
 				{% include "parts/flower-list-item.njk" %}
 				{% endfor %}
 			</div>
@@ -50,7 +50,7 @@
 				<h2 id="pie">PREMIUM INDOOR EXOTICS</h2>
 			</header>
 			<div id="media-list" class="featured flex-row">
-				{% for post in collections.premiumIndoorExoticsInStock %}
+				{% for post in collections.premiumIndoorExoticsInStock | reverse %}
 				{% include "parts/flower-list-item.njk" %}
 				{% endfor %}
 			</div>
@@ -61,7 +61,7 @@
 				<h2 id="mediums">EXOTIC MEDIUMS</h2>
 			</header>
 			<div id="media-list" class="featured flex-row">
-				{% for post in collections.mediumsExoticsInStock %}
+				{% for post in collections.mediumsExoticsInStock | reverse %}
 				{% include "parts/flower-list-item.njk" %}
 				{% endfor %}
 			</div>
@@ -72,7 +72,7 @@
 				<h2 id="smalls">EXOTIC SMALLS</h2>
 			</header>
 			<div id="media-list" class="featured flex-row">
-				{% for post in collections.smallsExoticsInStock %}
+				{% for post in collections.smallsExoticsInStock | reverse %}
 				{% include "parts/flower-list-item.njk" %}
 				{% endfor %}
 			</div>

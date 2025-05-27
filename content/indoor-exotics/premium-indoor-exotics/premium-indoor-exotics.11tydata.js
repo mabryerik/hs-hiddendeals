@@ -6,5 +6,5 @@ export default {
 		"premium-indoor-exotics"
 	],
 	"layout": "layouts/post-media.njk",
-	date: "git Last Modified",
+	date: "git Created",
 };

@@ -859,17 +859,16 @@ main {
 	}
 }
 
-.homepage section.featured:nth-of-type(1),
 .feed-page .oos {
 	background-image: url(/img/site/background-red.png);
 }
 
-.homepage section.featured:nth-of-type(2),
+.homepage section.featured:nth-of-type(1),
 .feed-page section.featured:nth-of-type(odd) {
 	background-image: url(/img/site/background-purple.png);
 }
 
-.homepage section.featured:nth-of-type(3),
+.homepage section.featured:nth-of-type(2),
 .feed-page section.featured:nth-of-type(even) {
 	background-image: url(/img/site/background-green.png);
 }

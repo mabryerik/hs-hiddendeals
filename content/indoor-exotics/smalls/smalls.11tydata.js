@@ -6,5 +6,5 @@ export default {
 		"smalls"
 	],
 	"layout": "layouts/post-media.njk",
-	date: "git Last Modified",
+	date: "git Created",
 };
