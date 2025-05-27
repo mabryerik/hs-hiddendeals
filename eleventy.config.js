@@ -80,13 +80,11 @@ export default async function(eleventyConfig) {
 			return collectionsApi.getFilteredByTags("deps", "inStock");
 		}
 	);
-
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
 			return false;
 		}
 	});
-
 	eleventyConfig.addFilter("capitalizeWords", function(value) {
 		if (typeof value !== 'string') {
 			return ''; // or handle the undefined case as needed
@@ -94,34 +92,19 @@ export default async function(eleventyConfig) {
 
 		return value.replace(/\b\w/g, char => char.toUpperCase());
 	});
-
-
-	// Copy the contents of the `public` folder to the output folder
-	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig
 		.addPassthroughCopy({
 			"./public/": "/"
 		})
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
 		.addPassthroughCopy("./content/2zd5uqd22dk4h16w18re6qpghm7rpumd.txt");
-
-	// Run Eleventy when these files change:
-	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
-
-	// Watch images for the image pipeline.
 	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif,avif}");
-
-	// Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
-	// Adds the {% css %} paired shortcode
 	eleventyConfig.addBundle("css", {
 		toFileDirectory: "dist",
 	});
-	// Adds the {% js %} paired shortcode
 	eleventyConfig.addBundle("js", {
 		toFileDirectory: "dist",
 	});
-
-	// Official plugins
 	eleventyConfig.addPlugin(pluginSyntaxHighlight, {
 		preAttributes: { tabindex: 0 }
 	});
@@ -130,7 +113,7 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 
 	eleventyConfig.addPlugin(feedPlugin, {
-		type: "atom", // or "rss", "json"
+		type: "atom",
 		outputPath: "/feed/feed.xml",
 		stylesheet: "pretty-atom-feed.xsl",
 		templateData: {
@@ -152,15 +135,12 @@ export default async function(eleventyConfig) {
 	});
 eleventyConfig.addPlugin(pluginSEO);
 
-	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-		// Output formats for each image.
 		formats: ["avif", "webp", "auto"],
 		widths: ["auto"],
 		failOnError: false,
 		htmlOptions: {
 			imgAttributes: {
-				// e.g. <img loading decoding> assigned on the HTML tag will override these values.
 				loading: "lazy",
 				decoding: "async",
 			}
