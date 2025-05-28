@@ -1,6 +1,69 @@
-{% set posts = collections.depsInStock %}
-<div id="media-list" class="flex-row">
-	{% for post in posts | reverse %}
-	{% include "parts/flower-list-item.njk" %}
-	{% endfor %}
+<div class="feed-page">
+<div class="feed-nav">
+	<nav class="menu-nav flex-row">
+		<a href="#light-assist">Light Assist Premium</a>
+		<a href="#dep-aaa">Light Dep AAA</a>
+		<a href="#dep-5" class="visually-hidden">Light Dep 5</a>
+		<a href="#prem-smalls" class="visually-hidden">Premium Smalls</a>
+		<a href="#mdep-smalls">Light Dep Smalls</a>
+	</nav>
+</div>
+
+<section class="featured">
+	<header class="section-header">
+		<h2 id="light-assist">Light Assist Premium</h2>
+	</header>
+	<div id="media-list" class="featured flex-row">
+		{% for post in collections.lightAssistInStock | reverse %}
+		{% include "parts/flower-list-item.njk" %}
+		{% endfor %}
+	</div>
+</section>
+
+<section class="featured">
+	<header class="section-header">
+		<h2 id="dep-aaa">Light Dep AAA</h2>
+	</header>
+	<div id="media-list" class="featured flex-row">
+		{% for post in collections.depAAAInStock | reverse %}
+		{% include "parts/flower-list-item.njk" %}
+		{% endfor %}
+	</div>
+</section>
+
+<section class="featured visually-hidden">
+	<header class="section-header">
+		<h2 id="dep-5">Light Dep 5</h2>
+	</header>
+	<div id="media-list" class="featured flex-row">
+		{% for post in collections.dep5InStock | reverse %}
+		{% include "parts/flower-list-item.njk" %}
+		{% endfor %}
+	</div>
+</section>
+
+<section class="featured visually-hidden">
+	<header class="section-header">
+		<h2 id="prem-smalls">Premium Smalls</h2>
+	</header>
+	<div id="media-list" class="featured flex-row">
+		{% for post in collections.premSmallsInStock | reverse %}
+		{% include "parts/flower-list-item.njk" %}
+		{% endfor %}
+	</div>
+</section>
+
+<section class="featured">
+	<header class="section-header">
+		<h2 id="dep-smalls">Light Dep Smalls</h2>
+	</header>
+	<div id="media-list" class="featured flex-row">
+		{% for post in collections.depSmallsInStock | reverse %}
+		{% include "parts/flower-list-item.njk" %}
+		{% endfor %}
+	</div>
+</section>
+
+
+
 </div>

@@ -6,5 +6,9 @@ export default {
 		"smalls"
 	],
 	"layout": "layouts/post-media.njk",
-	date: "git Created",
-};
+	date: "git Last Modified",
+		eleventyComputed: {
+			 hdPrice: "{{ metadata.exsmallshd }}",
+			 regPrice: "{{ metadata.exsmallsreg }}",
+		},
+	};

@@ -6,5 +6,9 @@ export default {
 		"mediums"
 	],
 	"layout": "layouts/post-media.njk",
-	date: "git Created",
+	date: "git Last Modified",
+	eleventyComputed: {
+		 hdPrice: "{{ metadata.exmediumshd }}",
+		 regPrice: "{{ metadata.exmediumsreg }}",
+	}
 };

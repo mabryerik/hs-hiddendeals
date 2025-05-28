@@ -6,5 +6,9 @@ export default {
 		"light-assist"
 	],
 	"layout": "layouts/post-media.njk",
-	date: "git Last Modified",
+	ddate: "git Last Modified",
+	eleventyComputed: {
+		 hdPrice: "{{ metadata.lightassisthd }}",
+		 regPrice: "{{ metadata.lightassistreg }}",
+	},
 };

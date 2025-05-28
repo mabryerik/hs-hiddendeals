@@ -69,6 +69,66 @@ export default async function(eleventyConfig) {
 		}
 	);
 	eleventyConfig.addCollection(
+		"lightAssistNoStock",
+		function (collectionsApi) {
+			return collectionsApi.getFilteredByTags("light-assist", "noStock");
+		}
+	);
+	eleventyConfig.addCollection(
+		"lightAssistInStock",
+		function (collectionsApi) {
+			return collectionsApi.getFilteredByTags("light-assist", "inStock");
+		}
+	);
+	eleventyConfig.addCollection(
+		"depAAAInStock",
+		function (collectionsApi) {
+			return collectionsApi.getFilteredByTags("depaaa", "inStock");
+		}
+	);
+	eleventyConfig.addCollection(
+		"depAAANoStock",
+		function (collectionsApi) {
+			return collectionsApi.getFilteredByTags("depaaa", "noStock");
+		}
+	);
+	eleventyConfig.addCollection(
+		"dep5InStock",
+		function (collectionsApi) {
+			return collectionsApi.getFilteredByTags("dep5", "inStock");
+		}
+	);
+	eleventyConfig.addCollection(
+		"dep5NoStock",
+		function (collectionsApi) {
+			return collectionsApi.getFilteredByTags("dep5", "noStock");
+		}
+	);
+	eleventyConfig.addCollection(
+		"premSmallsInStock",
+		function (collectionsApi) {
+			return collectionsApi.getFilteredByTags("premium", "smalls", "inStock");
+		}
+	);
+	eleventyConfig.addCollection(
+		"premSmallsNoStock",
+		function (collectionsApi) {
+			return collectionsApi.getFilteredByTags("premium", "smalls", "noStock");
+		}
+	);
+	eleventyConfig.addCollection(
+		"depSmallsInStock",
+		function (collectionsApi) {
+			return collectionsApi.getFilteredByTags("deps", "smalls", "inStock");
+		}
+	);
+	eleventyConfig.addCollection(
+		"depSmallsNoStock",
+		function (collectionsApi) {
+			return collectionsApi.getFilteredByTags("deps", "smalls", "noStock");
+		}
+	);
+	eleventyConfig.addCollection(
 		"depsNoStock",
 		function (collectionsApi) {
 			return collectionsApi.getFilteredByTags("deps", "noStock");

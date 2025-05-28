@@ -6,5 +6,9 @@ export default {
 		"premium-indoor-exotics"
 	],
 	"layout": "layouts/post-media.njk",
-	date: "git Created",
+	date: "git Last Modified",
+	eleventyComputed: {
+		 hdPrice: "{{ metadata.piehd }}",
+		 regPrice: "{{ metadata.piereg }}",
+	},
 };

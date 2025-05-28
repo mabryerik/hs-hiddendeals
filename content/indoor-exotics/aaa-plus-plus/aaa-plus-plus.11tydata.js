@@ -3,8 +3,12 @@ export default {
 		"posts",
 		"flower",
 		"exotics",
-		"aaa-plus-plus"
+		"aaa-plus-plus",
 	],
 	"layout": "layouts/post-media.njk",
-	date: "git Created",
+	date: "git Last Modified",
+	eleventyComputed: {
+		 hdPrice: "{{ metadata.aaaplusplushd }}",
+		 regPrice: "{{ metadata.aaaplusplusreg }}",
+	},
 };

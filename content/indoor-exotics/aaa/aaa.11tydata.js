@@ -6,5 +6,9 @@ export default {
 		"aaa"
 	],
 	"layout": "layouts/post-media.njk",
-	date: "git Created",
+	date: "git Last Modified",
+	eleventyComputed: {
+		 hdPrice: "{{ metadata.aaahd }}",
+		 regPrice: "{{ metadata.aaareg }}",
+	}
 };
