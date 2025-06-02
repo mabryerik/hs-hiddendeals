@@ -6,9 +6,6 @@ layout: layouts/base.njk
 <section id="media-page">
 	<article class="post">
 		<header class="flex-column">
-		{% if oos %}
-			<h3 class="red center">Temporarily out of stock</h3>
-		{% endif %}
 			<div class="flex-row row">
 				<div class="price-compare flex-row">
 					<p class="center">
@@ -29,29 +26,45 @@ layout: layouts/base.njk
 		<div class="media-area">
 			<div class="flex-row">
 				{% if video1 %}
-				<div class="item">
-					<video class="full-span" controls loop muted preload="auto" tabindex="0">
-						<source src="{{ video1 }}" type="video/webm" />
-						If you're seeing this message, your web browser does not support this video type. Please contact your sale rep to get receive this video.
-					</video>
-				</div>
+				<iframe
+					src="{{ video1 }}"
+					width="720"
+					height="720"
+					style="height: auto; width: 100%; aspect-ratio: 1 / 1;"
+					allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+					allowfullscreen
+					frameborder="0"
+					class="rounded"
+				></iframe>
 				{% endif %}
 
 				{% if video2 %}
 				<div class="item">
-				<video class="full-span" controls loop muted preload="auto" tabindex="0">
-					<source src="{{ video2 }}" type="video/webm" />
-					If you're seeing this message, your web browser does not support this video type. Please contact your sale rep to get receive this video.
-				</video>
+				<iframe
+					src="{{ video2 }}"
+					width="720"
+					height="720"
+					style="height: auto; width: 100%; aspect-ratio: 1 / 1;"
+					allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+					allowfullscreen
+					frameborder="0"
+					class="rounded"
+				></iframe>
 				</div>
 				{% endif %}
 
 				{% if video3 %}
 				<div class="item">
-				<video class="full-span" controls loop muted preload="auto" tabindex="0">
-					<source src="{{ video3 }}" type="video/webm" />
-					If you're seeing this message, your web browser does not support this video type. Please contact your sale rep to get receive this video.
-				</video>
+				<iframe
+					src="{{ video3 }}"
+					width="720"
+					height="720"
+					style="height: auto; width: 100%; aspect-ratio: 1 / 1;"
+					allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+					allowfullscreen
+					frameborder="0"
+					class="rounded"
+				></iframe>
 				</div>
 				{% endif %}
 

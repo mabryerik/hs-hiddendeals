@@ -34,10 +34,16 @@
 				{% else %}
 					<div class="item">
 					<a href="{{ post.url }}">
-						<video class="full-span" controls loop muted preload="auto" tabindex="0">
-							<source src="{{ post.data.video1 }}" type="video/webm" />
-							If you're seeing this message, your web browser does not support this video type. Please contact your sale rep to get receive this video.
-						</video>
+						<iframe
+							src="{{ post.data.video1 }}"
+							width="720"
+							height="720"
+							style="height: auto; width: 100%; aspect-ratio: 1 / 1;"
+							allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+							allowfullscreen
+							frameborder="0"
+							class="rounded"
+						></iframe>
 					</a>
 
 					</div>

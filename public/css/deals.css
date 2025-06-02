@@ -39,6 +39,10 @@ hr {
 	--border-radius: 0.25rem;
 }
 
+.rounded {
+	border-radius: var(--border-radius);
+}
+
 .visually-hidden {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
@@ -70,6 +74,7 @@ html {
 
 body {
 	font-family: var(--font-body-family);
+	letter-spacing: 0.33px;
 }
 
 h1,
@@ -821,6 +826,12 @@ main {
 	margin-inline: auto;
 }
 
+.oos {
+	a[href] {
+		text-decoration-color: var(--font-color-secondary);
+	}
+}
+
 .feed-page {
 	position: relative;
 
@@ -828,8 +839,6 @@ main {
 		background-color: rgba(255, 255, 255, 0.75);
 		backdrop-filter: blur(2px) brightness(150%);
 	}
-
-	.oos {}
 
 	.feed-nav {
 		position: sticky;
@@ -993,13 +1002,15 @@ div:is(.homepage) .featured {
 			margin-block: 0 !important;
 			color: var(--font-color-secondary);
 			font-size: calc(125% + 1dvh);
+			text-shadow: var(--text-shadow);
 		}
 
-		& p {
+		&> p {
 			padding-block: 0;
 			margin-block: 0 1dvh;
 			max-width: 90ch;
 			margin-inline: auto;
+			text-shadow: var(--text-shadow);
 		}
 	}
 
@@ -1571,6 +1582,10 @@ div:is(.homepage) .featured {
 	margin-top: 2rem;
 	position: relative;
 
+	p {
+		text-align: justify;
+	}
+
 	& .flex-row {
 		align-items: flex-start;
 		gap: 1rem;
@@ -1584,7 +1599,10 @@ div:is(.homepage) .featured {
 			border-radius: var(--border-radius);
 		}
 	}
-
+	.footer-text h4,
+	.footer-nav h4 {
+		text-shadow: var(--text-shadow);
+	}
 	& .footer-nav {
 		gap: 1rem;
 
