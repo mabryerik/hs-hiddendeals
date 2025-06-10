@@ -9,7 +9,7 @@ export default {
 	"layout": "layouts/post-media.njk",
 	date: "git Last Modified",
 	eleventyComputed: {
-		 hdPrice: "{{ metadata.aaahd }}",
-		 regPrice: "{{ metadata.aaareg }}",
+		 hdPrice: "{{ metadata.aaahd | safe }}",
+		 regPrice: "{{ metadata.aaareg | safe }}",
 	},
 };

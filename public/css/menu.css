@@ -1,42 +1,112 @@
+hr {
+	margin-block: 0.25rem!important;
+	padding: 0!important;
+	border: 0.5px solid rgba(0, 0, 0, 0.1)!important;
+}
+
 .content.menu .padding {
 	margin-top: 1rem;
 	padding: 0;
 	margin-inline: auto;
 
-	section header.flex-row {
-		gap: 0;
-		align-items: center;
-		justify-content: space-between;
+	.white-bg {
+		background-color: whitesmoke;
+		border-radius: var(--border-radius);
+		padding-inline: 1rem;
+		padding-block: 0 1rem;
+		margin-block: 0 1rem;
+	}
+
+	section header {
 		margin-block: 1rem;
+		color: black;
+		padding-block: 1rem 0;
+		justify-content: space-between;
+		align-items: center!important;
+
 		h3 {
-			color: rgb(255, 255, 105);
-			letter-spacing: 2px!important;
-			font-size: clamp(1rem, 3dvw, 1.5rem);
-			text-shadow: 0 2px 0 black;
+			letter-spacing: 1px!important;
+			font-size: clamp(1.25rem, 5dvw, 2rem);
+			color: black;
+			width: min(100%, 25ch);
 		}
 		h3, .more {
-			width: min(100%, 20ch);
-			margin: 0;
+			text-align: center;
 			flex-grow: 1;
 		}
 
 		.more {
+			background-color: white;
+			padding: 1rem;
+			outline: 1px solid rgba(0, 0, 0, 0.1);
+			border-radius: var(--border-radius);
+			width: min(100%, 35ch);
+			margin-inline: auto;
+			align-items: center;
+			justify-content: center;
+			gap: 1rem;
+			sup {
+				font-size: 0.75rem;
+			}
+			div {
+				padding-inline: 1rem;
+				margin-block: 0.25rem;
+			}
+			.left {
+				width: fit-content;
+				margin-inline: auto;
+				font-size: 1.1rem;
+				font-weight: bold;
+				line-height: 1.5;
+			}
+		}
+
+		.more span {
 			font-family: var(--font-heading-family);
 			text-transform: uppercase;
-			font-size: calc(1rem - 2px);
+			color: black;
+			margin-right: 1rem;
+			font-size: 1rem;
+			&.red {
+				font-color: red;
+			}
+			&:not(.red) {
+				font-size: calc(1rem - 2px);
+			}
 		}
 	}
 
 	.indicas {
 		background-image: url(/img/site/background-purple.png);
+		table thead {
+			background-color: rgba(104, 73, 157, 0.5);
+		}
+
+		table tbody tr:nth-of-type(even) {
+			background-color: rgba(101, 73, 158, 0.1);
+		}
 	}
 
 	.sativas {
 		background-image: url(/img/site/background-red.png);
+		table thead {
+			background-color: rgba(215, 71, 53, 0.5);
+		}
+
+		table tbody tr:nth-of-type(even) {
+			background-color: rgba(215, 71, 53, 0.1);
+		}
 	}
 
 	.hybrids {
 		background-image: url(/img/site/background-green.png);
+		table thead {
+			background-color: rgba(12, 142, 68, 0.5);
+		}
+
+		table tbody tr:nth-of-type(even) {
+			background-color: rgba(12, 142, 68, 0.1);
+		}
 	}
 
 	.flex-row {
@@ -47,31 +117,36 @@
 	.indicas,
 	.sativas,
 	.hybrids {
-		background-size: 300%;
-		background-position: bottom;
-		padding: 1rem 0.25rem 0.25rem 0.25rem;
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		padding: 0.25rem;
 		border-radius: var(--border-radius);
 		box-shadow: 0 3px 0 rgba(0, 0, 0, 0.66);
-		width: min(100%, 45ch - 1rem);
+		width: min(100%, 30ch);
 		flex-grow: 1;
+		margin-bottom: 1rem;
 
 		& h4 {
 			color: whitesmoke;
-			padding-block: 0.25rem 1rem;
+			padding-block: 0.25rem;
 			text-shadow: var(--text-shadow);
+			letter-spacing: 2px;
+		}
+
+		.profile-header {
+			padding: 0;
 		}
 	}
 
 	.strain-body {
 		text-transform: uppercase;
-		table-layout: fixed;
 		color: var(--font-color-dark);
 		background-color: whitesmoke;
 		border-radius: var(--border-radius);
 		overflow: hidden;
 		font-size: 0.75rem;
-		height: calc(100% - 2rem);
-		padding-top: 0.5rem;
+		padding-top: 0;
 		table {
 			table-layout: auto;
 			border-collapse: collapse;
@@ -90,10 +165,6 @@
 			& th,
 			td {
 				padding: 0.5rem 0.25rem;
-			}
-
-			& tbody tr:nth-of-type(even) {
-				background-color: rgba(0, 0, 0, 0.05);
 			}
 
 			.strain-name {

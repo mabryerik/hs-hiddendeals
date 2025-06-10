@@ -3,13 +3,12 @@ export default {
 		"posts",
 		"flower",
 		"exotics",
-		"aaa-plus-plus",
-		"noStock"
+		"aaa-plus-plus-plus",
 	],
 	"layout": "layouts/post-media.njk",
 	date: "git Last Modified",
 	eleventyComputed: {
-		 hdPrice: "{{ metadata.aaaplusplushd | safe }}",
-		 regPrice: "{{ metadata.aaaplusplusreg | safe }}",
-	}
+		 hdPrice: "{{ metadata.aaaplusplusplushd | safe }}",
+		 regPrice: "{{ metadata.aaaplusplusplusreg | safe }}",
+	},
 };

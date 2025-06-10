@@ -43,6 +43,15 @@ hr {
 	border-radius: var(--border-radius);
 }
 
+@supports (paint-order: stroke fill) {
+	.yellow {
+		-webkit-text-stroke: 4px black;
+		paint-order: stroke fill;
+		text-shadow: none !important;
+		color: var(--font-color-secondary);
+	}
+}
+
 .visually-hidden {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
@@ -456,7 +465,7 @@ header.site-header {
 
 
 	& .inner-header {
-		width: min(100%, 90ch);
+		width: min(100%, 150ch);
 		margin-inline: auto;
 		padding-inline: 0.5rem;
 
@@ -498,6 +507,7 @@ header.site-header {
 			margin-inline: auto;
 			margin-top: 0.5rem;
 			width: calc(100% - 2dvw);
+			max-width: 30ch;
 			height: auto;
 		}
 	}

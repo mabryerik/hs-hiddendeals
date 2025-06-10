@@ -6,11 +6,14 @@
 				</nav>
 			</div>
 			<div class="padding">
-				<section id="la-prem" class="">
+				<section id="la-prem" class="white-bg">
 					<header class="flex-row">
-						<h3 class="center">Light Assist Premium</h3>
-						<div class="more center">
-							<a href="/deps-and-more"> All Light Assist Premium » </a>
+						<h3 class="">Light Assit Premium</h3>
+						<div class="more">
+							<div class="left">
+								<span class="red"><b>Hidden Deals</b></span> {{ metadata.lightassisthd | safe }}<br>
+								<span><b>Regular Price</b></span> {{ metadata.lightassistreg | safe }}
+							</div>
 						</div>
 					</header>
 					<div class="flex-row">
@@ -26,45 +29,39 @@
 											<th class="left">Strains</th>
 											<th>THCa</th>
 											<th>Stock</th>
-											<th>Reg</th>
-											<th>Hidden Deals</th>
+
 										</tr>
 									</thead>
 									<tbody class="strain">
-									<tr>
-										<td class="strain-name">BISCOTTI</td>
-										<td class="thca">24.75</td>
-										<td class="stock">0.91</td>
-										<td class="reg-price">{{ metadata.lightassistreg }}</td>
-										<td class="hidden-deals">{{ metadata.lightassisthd }}</td>
-									</tr>
+										<tr>
+											<td class="strain-name">BISCOTTI</td>
+											<td class="thca">24.75</td>
+											<td class="stock">0.91</td>
+
+										</tr>
 										<tr>
 											<td class="strain-name">HANS SOLO</td>
 											<td class="thca">29.94</td>
 											<td class="stock">7</td>
-											<td class="reg-price">{{ metadata.lightassistreg }}</td>
-											<td class="hidden-deals">{{ metadata.lightassisthd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">ICE CREAM CAKE</td>
 											<td class="thca">26.98</td>
 											<td class="stock">4.47</td>
-											<td class="reg-price">{{ metadata.lightassistreg }}</td>
-											<td class="hidden-deals">{{ metadata.lightassisthd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">VANILLA KUSH</td>
 											<td class="thca">36.52</td>
 											<td class="stock">0.28</td>
-											<td class="reg-price">{{ metadata.lightassistreg }}</td>
-											<td class="hidden-deals">{{ metadata.lightassisthd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">WEDDING PIE</td>
 											<td class="thca">26.89</td>
 											<td class="stock">0.73</td>
-											<td class="reg-price">{{ metadata.lightassistreg }}</td>
-											<td class="hidden-deals">{{ metadata.lightassisthd }}</td>
+
 										</tr>
 
 									</tbody>
@@ -84,8 +81,7 @@
 											<th class="left">Strains</th>
 											<th>THCa</th>
 											<th>Stock</th>
-											<th>Reg</th>
-											<th>Hidden Deals</th>
+
 										</tr>
 									</thead>
 									<tbody class="strain">
@@ -94,22 +90,19 @@
 											<td class="strain-name">BLUE DREAM</td>
 											<td class="thca">27.45</td>
 											<td class="stock">20</td>
-											<td class="reg-price">{{ metadata.lightassistreg }}</td>
-											<td class="hidden-deals">{{ metadata.lightassisthd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">GUM DROPS</td>
 											<td class="thca">29.36</td>
 											<td class="stock">0.31</td>
-											<td class="reg-price">{{ metadata.lightassistreg }}</td>
-											<td class="hidden-deals">{{ metadata.lightassisthd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">KEY LIME JACK</td>
 											<td class="thca">29.37</td>
 											<td class="stock">9.33</td>
-											<td class="reg-price">{{ metadata.lightassistreg }}</td>
-											<td class="hidden-deals">{{ metadata.lightassisthd }}</td>
+
 										</tr>
 
 									</tbody>
@@ -129,8 +122,7 @@
 											<th class="left">Strains</th>
 											<th>THCa</th>
 											<th>Stock</th>
-											<th>Reg</th>
-											<th>Hidden Deals</th>
+
 										</tr>
 									</thead>
 									<tbody class="strain">
@@ -139,22 +131,19 @@
 											<td class="strain-name">GOVERNMENT OASIS</td>
 											<td class="thca">30.25</td>
 											<td class="stock">6</td>
-											<td class="reg-price">{{ metadata.lightassistreg }}</td>
-											<td class="hidden-deals">{{ metadata.lightassisthd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">OREOZ</td>
 											<td class="thca"></td>
 											<td class="stock">6</td>
-											<td class="reg-price">{{ metadata.lightassistreg }}</td>
-											<td class="hidden-deals">{{ metadata.lightassisthd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">RAINBOW SHERBET</td>
 											<td class="thca">30.99</td>
 											<td class="stock">1.25</td>
-											<td class="reg-price">{{ metadata.lightassistreg }}</td>
-											<td class="hidden-deals">{{ metadata.lightassisthd }}</td>
+
 										</tr>
 									</tbody>
 								</table>
@@ -162,11 +151,17 @@
 						</article>
 					</div>
 				</section>
-				<section id="light-dep" class="">
+				<section id="light-dep" class="white-bg">
 					<header class="flex-row">
-						<h3 class="center">Light Dep</h3>
-						<div class="more center">
-							<a href="/deps-and-more"> All Light Dep » </a>
+						<h3 class="">Light Dep</h3>
+						<div class="more">
+							<div class="left">
+								<span class="red"><b>Hidden Deals / AAA</b></span> - {{ metadata.depaaahd | safe }}<br>
+								<span><b>Regular Price / AAA</b></span> {{ metadata.depaaareg | safe }}
+								<hr>
+								<span class="red"><b>Hidden Deals / D5</b></span> {{ metadata.dep5hd | safe }}<br>
+								<span><b>Regular Price / D5</b></span> {{ metadata.dep5reg | safe }}
+							</div>
 						</div>
 					</header>
 					<div class="flex-row">
@@ -182,8 +177,7 @@
 											<th class="left">Strains</th>
 											<th>THCa</th>
 											<th>Stock</th>
-											<th>Reg</th>
-											<th>Hidden Deals</th>
+
 										</tr>
 									</thead>
 									<tbody class="strain">
@@ -191,16 +185,14 @@
 											<td class="strain-name">DOSIDO - D3</td>
 											<td class="thca">30.16</td>
 											<td class="stock">0.15</td>
-											<td class="reg-price">$450</td>
-											<td class="hidden-deals">$391.50</td>
+
 										</tr>
 
 										<tr>
 											<td class="strain-name">PAPAYA - AAA</td>
 											<td class="thca">27.78</td>
 											<td class="stock">0.43</td>
-											<td class="reg-price">{{ metadata.depaaareg }}</td>
-											<td class="hidden-deals">{{  metadata.depaaahd }}</td>
+
 										</tr>
 									</tbody>
 								</table>
@@ -220,8 +212,7 @@
 											<th class="left">Strains</th>
 											<th>THCa</th>
 											<th>Stock</th>
-											<th>Reg</th>
-											<th>Hidden Deals</th>
+
 										</tr>
 									</thead>
 									<tbody class="strain">
@@ -231,8 +222,7 @@
 											</td>
 											<td class="thca">29.76</td>
 											<td class="stock">0.23</td>
-											<td class="reg-price">{{ metadata.depaaareg }}</td>
-											<td class="hidden-deals">{{  metadata.depaaahd }}</td>
+
 										</tr>
 									</tbody>
 								</table>
@@ -251,8 +241,7 @@
 											<th class="left">Strains</th>
 											<th>THCa</th>
 											<th>Stock</th>
-											<th>Reg</th>
-											<th>Hidden Deals</th>
+
 										</tr>
 									</thead>
 									<tbody class="strain">
@@ -262,8 +251,7 @@
 											</td>
 											<td class="thca">29.71</td>
 											<td class="stock">37</td>
-											<td class="reg-price">{{ metadata.depaaareg }}</td>
-											<td class="hidden-deals">{{  metadata.depaaahd }}</td>
+
 										</tr>
 									</tbody>
 								</table>

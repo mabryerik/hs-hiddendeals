@@ -6,11 +6,14 @@
 				</nav>
 			</div>
 			<div class="padding">
-				<section id="prem-smalls" class="">
+				<section id="prem-smalls" class="white-bg">
 					<header class="flex-row">
-						<h3 class="center">Premium Smalls</h3>
-						<div class="more center">
-							<a href="/deps-and-more"> All Premium Smalls » </a>
+						<h3 class="">Premium Smalls</h3>
+						<div class="more">
+							<div class="left">
+								<span class="red"><b>Hidden Deals</b></span> {{ metadata.premsmallshd | safe }}<br>
+								<span><b>Regular Price</b></span> {{ metadata.premsmallsreg | safe }}
+							</div>
 						</div>
 					</header>
 					<div class="flex-row">
@@ -26,8 +29,7 @@
 											<th class="left">Strains</th>
 											<th>THCa</th>
 											<th>Stock</th>
-											<th>Reg</th>
-											<th>Hidden Deals</th>
+
 										</tr>
 									</thead>
 									<tbody class="strain">
@@ -35,50 +37,43 @@
 											<td class="strain-name">BLUE SKITTLEZ</td>
 											<td class="thca">28.44</td>
 											<td class="stock">0.14</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">GUAVA RUNTZ</td>
 											<td class="thca">28.84</td>
 											<td class="stock">0.28</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">ICE CREAM CAKE</td>
 											<td class="thca">26.98</td>
 											<td class="stock">9</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">ICE CREAM</td>
 											<td class="thca"></td>
 											<td class="stock">0.25</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">LEMON CHERRY GELATO - BIO</td>
 											<td class="thca">29.21</td>
 											<td class="stock">0.25</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">STRAWBERRY PINEAPPLE</td>
 											<td class="thca">29.59</td>
 											<td class="stock">0.35</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">XXX BIO</td>
 											<td class="thca">28.72</td>
 											<td class="stock">0.60</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 									</tbody>
 								</table>
@@ -98,8 +93,7 @@
 											<th class="left">Strains</th>
 											<th>THCa</th>
 											<th>Stock</th>
-											<th>Reg</th>
-											<th>Hidden Deals</th>
+
 										</tr>
 									</thead>
 									<tbody class="strain">
@@ -107,50 +101,43 @@
 											<td class="strain-name">BLUE DREAM</td>
 											<td class="thca">27.45</td>
 											<td class="stock">0.51</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">CALI SHERB</td>
 											<td class="thca">28.61</td>
 											<td class="stock">0.29</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">CHERRY AK</td>
 											<td class="thca">29.15</td>
 											<td class="stock">0.25</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">PINK CERTZ</td>
 											<td class="thca">28.43</td>
 											<td class="stock">0.49</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">SFV OG</td>
 											<td class="thca">26.1</td>
 											<td class="stock">0.28</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">SHERB BX</td>
 											<td class="thca">31.09</td>
 											<td class="stock">0.18</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">WHITE LOTUS</td>
 											<td class="thca">28.76</td>
 											<td class="stock">0.29</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 
 									</tbody>
@@ -169,8 +156,7 @@
 											<th class="left">Strains</th>
 											<th>THCa</th>
 											<th>Stock</th>
-											<th>Reg</th>
-											<th>Hidden Deals</th>
+
 										</tr>
 									</thead>
 									<tbody class="strain">
@@ -178,43 +164,37 @@
 											<td class="strain-name">CANDY RUNTZ</td>
 											<td class="thca">31.84</td>
 											<td class="stock">0.16</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">GARY PAYTON</td>
 											<td class="thca">29.49</td>
 											<td class="stock">0.28</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">MALATOV COCKTAIL</td>
 											<td class="thca">31.34</td>
 											<td class="stock">5</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">OREO RUNTZ</td>
 											<td class="thca"></td>
 											<td class="stock">0.22</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">SUNDAE RUNTZ</td>
 											<td class="thca">27.54</td>
 											<td class="stock">0.97</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 										<tr>
 											<td class="strain-name">SWEET TART</td>
 											<td class="thca">29.12</td>
 											<td class="stock">0.12</td>
-											<td class="reg-price">{{ metadata.premsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.premsmallshd }}</td>
+
 										</tr>
 									</tbody>
 								</table>
@@ -223,11 +203,14 @@
 						</article>
 					</div>
 				</section>
-				<section id="dep-smalls" class="">
+				<section id="dep-smalls" class="white-bg">
 					<header class="flex-row">
-						<h3 class="center">Light Dep Smalls</h3>
-						<div class="more center">
-							<a href="/deps-and-more"> All Light Dep Smalls » </a>
+						<h3 class="">Light Dep Smalls</h3>
+						<div class="more">
+							<div class="left">
+								<span class="red"><b>Hidden Deals</b></span> {{ metadata.depsmallshd | safe }}<br>
+								<span><b>Regular Price</b></span> {{ metadata.depsmallsreg | safe }}
+							</div>
 						</div>
 					</header>
 					<div class="flex-row">
@@ -243,19 +226,15 @@
 											<th class="left">Strains</th>
 											<th>THCa</th>
 											<th>Stock</th>
-											<th>Reg</th>
-											<th>Hidden Deals</th>
+
 										</tr>
 									</thead>
 									<tbody class="strain">
 										<tr>
-										<tr>
 											<td class="strain-name">JELLY CAKE</td>
 											<td class="thca">25.36</td>
 											<td class="stock">0.13</td>
-											<td class="reg-price">{{ metadata.depsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.depsmallshd }}</td>
-										</tr>
+
 										</tr>
 									</tbody>
 								</table>
@@ -274,8 +253,7 @@
 											<th class="left">Strains</th>
 											<th>THCa</th>
 											<th>Stock</th>
-											<th>Reg</th>
-											<th>Hidden Deals</th>
+
 										</tr>
 									</thead>
 									<tbody class="strain">
@@ -299,21 +277,17 @@
 											<th class="left">Strains</th>
 											<th>THCa</th>
 											<th>Stock</th>
-											<th>Reg</th>
-											<th>Hidden Deals</th>
+
 										</tr>
 									</thead>
 									<tbody class="strain">
-										<tr>
 										<tr>
 											<td class="strain-name">
 												<a href="/deps-and-more/deps/smalls/gorilla-blue">GORILLA BLUE</a>
 											</td>
 											<td class="thca">23.6</td>
 											<td class="stock">1.45</td>
-											<td class="reg-price">{{ metadata.depsmallsreg }}</td>
-											<td class="hidden-deals">{{ metadata.depsmallshd }}</td>
-										</tr>
+
 										</tr>
 									</tbody>
 								</table>

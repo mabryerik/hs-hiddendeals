@@ -20,6 +20,20 @@ export default async function(eleventyConfig) {
 		return collectionsApi.getFilteredByTags("exotics", "inStock");
 	}
 	);
+
+	eleventyConfig.addCollection(
+		"aaaPlusPlusPlusExoticsInStock",
+	function (collectionsApi) {
+		return collectionsApi.getFilteredByTags("exotics", "inStock", "aaa-plus-plus-plus");
+	}
+	);
+	eleventyConfig.addCollection(
+		"aaaPlusPlusPlusExoticsNoStock",
+	function (collectionsApi) {
+		return collectionsApi.getFilteredByTags("exotics", "noStock", "aaa-plus-plus-plus");
+	}
+	);
+
 	eleventyConfig.addCollection(
 		"aaaPlusPlusExoticsInStock",
 	function (collectionsApi) {

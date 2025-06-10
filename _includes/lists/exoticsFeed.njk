@@ -2,7 +2,7 @@
 
 		<div class="feed-nav">
 			<nav class="menu-nav flex-row">
-				<a href="#aaa-plusplusplus" class="visually-hidden">AAA+++ Exotic</a>
+				<a href="#aaa-plusplusplus" class="">AAA+++ Ultra Exotic</a>
 				<a href="#aaa-plusplus">AAA++ Exotic</a>
 				<a href="#aaa-plus">AAA+ Exotic</a>
 				<a href="#aaa">AAA Exotic</a>
@@ -11,6 +11,16 @@
 				<a href="#smalls">Exotic Smalls</a>
 			</nav>
 		</div>
+		<section class="featured">
+			<header class="section-header">
+				<h2 id="aaa-plusplusplus">AAA+++ ULTRA EXOTICS</h2>
+			</header>
+			<div id="media-list" class="featured flex-row">
+				{% for post in collections.aaaPlusPlusPlusExoticsInStock | reverse %}
+				{% include "parts/flower-list-item.njk" %}
+				{% endfor %}
+			</div>
+		</section>
 
 		<section class="featured">
 			<header class="section-header">
