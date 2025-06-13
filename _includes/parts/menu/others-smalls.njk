@@ -9,12 +9,18 @@
 				<section id="prem-smalls" class="white-bg">
 					<header class="flex-row">
 						<h3 class="">Premium Smalls</h3>
-						<div class="more">
-							<div class="left">
-								<span class="red"><b>Hidden Deals</b></span> {{ metadata.premsmallshd | safe }}<br>
-								<span><b>Regular Price</b></span> {{ metadata.premsmallsreg | safe }}
-							</div>
+						<div class="price-compare flex-row">
+							<p class="center hd">
+								<strong>Hidden Deals</strong><br>
+								{{ metadata.premsmallshd | safe }}
+							</p>
+							<p class="center reg">
+								<span><strong>Regular Price</strong></span>
+								{{ metadata.premsmallsreg | safe }}
+							</p>
 						</div>
+
+
 					</header>
 					<div class="flex-row">
 						<article class="indicas">
@@ -218,12 +224,18 @@
 				<section id="dep-smalls" class="white-bg">
 					<header class="flex-row">
 						<h3 class="">Light Dep Smalls</h3>
-						<div class="more">
-							<div class="left">
-								<span class="red"><b>Hidden Deals</b></span> {{ metadata.depsmallshd | safe }}<br>
-								<span><b>Regular Price</b></span> {{ metadata.depsmallsreg | safe }}
-							</div>
+						<div class="price-compare flex-row">
+							<p class="center hd">
+								<strong>Hidden Deals</strong><br>
+								{{ metadata.depsmallshd | safe }}
+							</p>
+							<p class="center reg">
+								<span><strong>Regular Price</strong></span>
+								{{ metadata.depsmallsreg | safe }}
+							</p>
 						</div>
+
+
 					</header>
 					<div class="flex-row">
 						<article class="indicas">

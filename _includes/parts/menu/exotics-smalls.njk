@@ -10,11 +10,15 @@
 				<section id="exotic-mediums" class="white-bg">
 					<header class="flex-row">
 						<h3 class="">exotics mediums</h3>
-						<div class="more">
-							<div class="left">
-								<span class="red"><b>Hidden Deals</b></span> {{ metadata.exmediumshd | safe }}<br>
-								<span><b>Regular Price</b></span> {{ metadata.exmediumsreg | safe }}
-							</div>
+						<div class="price-compare flex-row">
+							<p class="center hd">
+								<strong>Hidden Deals</strong><br>
+								{{ metadata.exmediumshd | safe }}
+							</p>
+							<p class="center reg">
+								<span><strong>Regular Price</strong></span>
+								{{ metadata.exmediumsreg | safe }}
+							</p>
 						</div>
 					</header>
 					<div class="flex-row">
@@ -160,12 +164,19 @@
 				<section id="exotic-smalls" class="white-bg">
 					<header class="flex-row">
 						<h3 class="">exotics smalls</h3>
-						<div class="more">
-							<div class="left">
-								<span class="red"><b>Hidden Deals</b></span> {{ metadata.exsmallshd | safe }}<br>
-								<span><b>Regular Price</b></span> {{ metadata.exsmallsreg | safe }}
-							</div>
+						<div class="price-compare flex-row">
+							<p class="center hd">
+								<strong>Hidden Deals</strong><br>
+								{{ metadata.exsmallshd | safe }}
+							</p>
+							<p class="center reg">
+								<span><strong>Regular Price</strong></span>
+								{{ metadata.exsmallsreg | safe }}
+							</p>
 						</div>
+
+
+
 					</header>
 					<div class="flex-row">
 						<article class="indicas">

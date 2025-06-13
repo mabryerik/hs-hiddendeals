@@ -24,6 +24,58 @@ hr {
 		justify-content: space-between;
 		align-items: center!important;
 
+		& .price-compare {
+			width: 100%;
+			border-radius: var(--border-radius);
+			overflow: hidden;
+			margin: 0;
+			background-color: white;
+			box-shadow: var(--box-shadow-66);
+
+			&.flex-row {
+				justify-content: space-between;
+				justify-items: center;
+				align-items: flex-start;
+				padding-block: 0 1rem;
+				gap: 0;
+			}
+
+			& p {
+				margin: 0;
+				width: min(100%, fit-content);
+				padding: 0;
+				flex-grow: 1;
+
+				&:first-of-type {
+					font-size: 2rem;
+					line-height: 1;
+					font-family: 'Cooper', ui-sans-serif, sans-serif;
+					color: rgba(195, 30, 30, 1);
+
+					& strong {
+						font-size: 1rem;
+						font-family: 'RobotoCondensed', ui-sans-serif, sans-serif;
+						color: var(--font-color-dark);
+						;
+					}
+				}
+
+				&:last-of-type {
+					font-size: 1.33rem;
+					font-weight: bold;
+					font-family: 'Cooper', ui-sans-serif, sans-serif;
+
+					span:first-of-type {
+						font-family: 'RobotoCondensed', ui-sans-serif, sans-serif;
+						display: block;
+						padding-top: 1dvw;
+						font-size: 1rem;
+						font-weight: normal;
+					}
+				}
+			}
+		}
+
 		h3 {
 			letter-spacing: 1px!important;
 			font-size: clamp(1.25rem, 5dvw, 2rem);

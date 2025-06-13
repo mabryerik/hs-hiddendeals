@@ -7,18 +7,26 @@
 					<h3 class="price-level">{{ post.data.priceLevel }}</h3>
 				</div>
 				<div class="flex-column other-info {% if post.data.profile == "hybrid" %}hybrid{% endif %} {% if post.data.profile == "indica" %}indica{%endif%} {% if post.data.profile == "sativa" %}sativa{% endif %}">
-					<span class="profile">{{ post.data.profile }}</span>
+				{% if post.data.thca %}
+					<span class="profile">
+						{{ post.data.profile }}
+					</span>
 					<span class="thca center">
 						{{ post.data.thca }} THCa
 					</span>
+					{% else %}
+					<span class="profile nothca">
+						{{ post.data.profile }}
+					</span>
+				{% endif %}
 				</div>
 			</div>
 			<div class="price-compare flex-row">
-				<p class="center">
+				<p class="center hd">
 					<strong>Hidden Deals Price</strong><br>
 					{{ post.data.hdPrice }}
 				</p>
-				<p class="center">
+				<p class="center reg">
 					<span><strong>Regular Price</strong></span>
 					{{ post.data.regPrice }}
 				</p>

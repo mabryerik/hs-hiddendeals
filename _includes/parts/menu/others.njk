@@ -9,12 +9,19 @@
 				<section id="la-prem" class="white-bg">
 					<header class="flex-row">
 						<h3 class="">Light Assit Premium</h3>
-						<div class="more">
-							<div class="left">
-								<span class="red"><b>Hidden Deals</b></span> {{ metadata.lightassisthd | safe }}<br>
-								<span><b>Regular Price</b></span> {{ metadata.lightassistreg | safe }}
-							</div>
+						<div class="price-compare flex-row">
+							<p class="center hd">
+								<strong>Hidden Deals</strong><br>
+								{{ metadata.lightassisthd | safe }}
+							</p>
+							<p class="center reg">
+								<span><strong>Regular Price</strong></span>
+								{{ metadata.lightassistreg | safe }}
+							</p>
 						</div>
+
+
+
 					</header>
 					<div class="flex-row">
 						<article class="indicas">
@@ -172,15 +179,31 @@
 				<section id="light-dep" class="white-bg">
 					<header class="flex-row">
 						<h3 class="">Light Dep</h3>
-						<div class="more">
-							<div class="left">
-								<span class="red"><b>Hidden Deals / AAA</b></span> - {{ metadata.depaaahd | safe }}<br>
-								<span><b>Regular Price / AAA</b></span> {{ metadata.depaaareg | safe }}
-								<hr>
-								<span class="red"><b>Hidden Deals / D5</b></span> {{ metadata.dep5hd | safe }}<br>
-								<span><b>Regular Price / D5</b></span> {{ metadata.dep5reg | safe }}
-							</div>
+
+						<div class="price-compare flex-row">
+							<p class="center hd">
+								<strong>Hidden Deals AAA</strong><br>
+								{{ metadata.depaaahd | safe }}
+							</p>
+							<p class="center reg">
+								<span><strong>Regular Price</strong></span>
+								{{ metadata.depaaareg | safe }}
+							</p>
 						</div>
+
+						<div class="price-compare flex-row">
+							<p class="center hd">
+								<strong>Hidden Deals D5</strong><br>
+								{{ metadata.dep5hd | safe }}
+							</p>
+							<p class="center reg">
+								<span><strong>Regular Price</strong></span>
+								{{ metadata.dep5reg | safe }}
+							</p>
+						</div>
+
+
+
 					</header>
 					<div class="flex-row">
 						<article class="indicas">
