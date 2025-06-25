@@ -1,0 +1,14 @@
+---
+strain: lemon cherry gelato 1
+profile: indica
+priceLevel: premium indoor exotic
+thca: 27.65%
+video1: https://player.cloudinary.com/embed/?cloud_name=dcf9dmvo5&public_id=prem-aaa-plus_indica_lcg_g1zm0d&profile=flower
+photo1: ../img/prem-indoor-ex_indica_lcg_1.jpeg
+photo2: ../img/prem-indoor-ex_indica_lcg_2.jpeg
+photo3: ../img/prem-indoor-ex_indica_lcg_3.jpg
+tags: inStock
+source: https://www.leafly.com/strains/lemon-cherry-gelato
+---
+
+Lemon Cherry Gelato is a extremely popular hybrid weed strain with several alleged origins. It could just be Gelato bagseed, aka between Sunset Sherbet and Girl Scout Cookies. It can also be a type of Runtz, which is Gelato x Z. Now it is so popular, samples labeled 'LCG' surely include a broad range of Gelato, and Runtz varieties. [...] Lemon Cherry Gelato effects include tingly, relaxed, and euphoric. [...] Bred by Backpackboyz, Lemon Cherry Gelato features an aroma of lime, berries, and citrus with flavors of lemon, and sweet fruit. The dominant terpene of this strain is caryophyllene. <cite>- <a href="{{ source }}">Leafly</a></cite>

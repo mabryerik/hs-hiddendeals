@@ -1,0 +1,13 @@
+---
+strain: super boof
+profile: sativa
+priceLevel: premium indoor exotic
+thca: 23.82%
+video1: https://player.cloudinary.com/embed/?cloud_name=dcf9dmvo5&public_id=prem-aaa-plus_sativa_super-boof_e7znn7&profile=flower
+photo1: ../img/prem-indoor-ex_sativa_super-boof_1.jpg
+photo2: ../img/prem-indoor-ex_sativa_super-boof_2.jpg
+tags: inStock
+source: https://sativauniversity.com/strains/super-boof/
+---
+
+Super Boof, a potent [...] strain featuring genetics from Black Cherry Punch and Tropicana Cookies, delivers a balanced experience [...]. Originally known as Blockberry, this award-winning cultivar combines sweet cherry and citrus flavors with earthy cookie undertones. Its effects provide both mental stimulation and physical relaxation [...]. The strain’s complex terpene profile holds the key to its extraordinary versatility. <cite>- <a href="{{ source }}">Sativa University</a></cite>

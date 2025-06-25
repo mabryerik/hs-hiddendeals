@@ -4,10 +4,10 @@ profile: hybrid
 priceLevel: premium indoor exotic
 thca: 29.24%
 video1: https://player.cloudinary.com/embed/?cloud_name=dcf9dmvo5&public_id=a-indoor_hybrid_runtz_yg29cd&profile=flower
-photo1: https://media.dont.zone/hs/media/img/flower/a-indoor_hybrid_runtz_1_cropped.jpeg
-photo2: https://media.dont.zone/hs/media/img/flower/a-indoor_hybrid_runtz_2_cropped.jpeg
-tags: inStock
+photo1: ../img/prem-indoor-ex_hybrid_runtz_1.jpg
+photo2: ../img/prem-indoor-ex_hybrid_runtz_2.jpg
 source: https://www.allbud.com/marijuana-strains/hybrid/runtz
+tags: inStock
 ---
 
 Runtz is an evenly balanced hybrid strain (50% indica/50% sativa) created through a delicious cross of the infamous Zkittlez X Gelato strains. Named for the iconic candy, Runtz brings on a super delicious fruity flavor with tropical citrus and sour berries galore. The aroma is very similar, although with a sharp spicy pineapple effect that turns slightly pungent as the sticky little nugs are broken apart and burned. [...] This bud has dense grape-shaped olive green nugs with thin orange hairs, dark purple undertones and a coating of frosty tiny white purple-tinted crystal trichomes. <cite>- <a href="{{ source }}">allbud</a></cite>
