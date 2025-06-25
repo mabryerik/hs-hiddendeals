@@ -3,19 +3,15 @@
 		<h2 class="center page-title">{{ title }}</h2>
 	{% else %}
 		<h2 class="center page-title">{{ strain }}</h2>
-		<h3 class="center price-level">{{ priceLevel }}
+		<h3 class="center price-level">{{ priceLevel }}</h3>
 	{% endif %}
 	{% if desc %}
-	<p class="center desc">{{ desc | safe }}</p>
+		<p class="center desc">{{ desc | safe }}</p>
 	{% endif %}
 	{% if tip %}
-		<p class="center tip">
-			{{ tip | safe }}
-		</p>
+		<p class="center tip">{{ tip | safe }}</p>
 	{% endif %}
 	{% if content %}
-	<p class="strain-desc">
-	{{ content | safe }}
-	</p>
+		<p class="strain-desc">{{ content | safe }}</p>
 	{% endif %}
 </header>
