@@ -23,9 +23,7 @@ hr {
 		padding-block: 1rem 0;
 		justify-content: space-between;
 		align-items: center!important;
-
 		& .price-compare {
-			width: 100%;
 			border-radius: var(--border-radius);
 			overflow: hidden;
 			margin: 0;
@@ -36,7 +34,7 @@ hr {
 				justify-content: space-between;
 				justify-items: center;
 				align-items: flex-start;
-				padding-block: 0 1rem;
+				padding-block: 1rem;
 				gap: 0;
 			}
 
@@ -54,7 +52,7 @@ hr {
 
 					& strong {
 						font-size: 1rem;
-						font-family: 'RobotoCondensed', ui-sans-serif, sans-serif;
+						font-family: ui-sans-serif, sans-serif;
 						color: var(--font-color-dark);
 						;
 					}
@@ -66,9 +64,8 @@ hr {
 					font-family: 'Cooper', ui-sans-serif, sans-serif;
 
 					span:first-of-type {
-						font-family: 'RobotoCondensed', ui-sans-serif, sans-serif;
+						font-family: ui-sans-serif, sans-serif;
 						display: block;
-						padding-top: 1dvw;
 						font-size: 1rem;
 						font-weight: normal;
 					}
@@ -77,14 +74,16 @@ hr {
 		}
 
 		h3 {
-			letter-spacing: 1px!important;
+			letter-spacing: 2px!important;
 			font-size: clamp(1.25rem, 5dvw, 2rem);
-			color: black;
-			width: min(100%, 25ch);
+			color: white;
+			text-shadow: var(--text-shadow);
+			padding-inline: 1rem;
 		}
-		h3, .more {
-			text-align: center;
+		h3, .price-compare {
 			flex-grow: 1;
+			text-align: center;
+			width: min(100%, 35ch);
 		}
 
 		.more {
@@ -92,7 +91,7 @@ hr {
 			padding: 1rem;
 			outline: 1px solid rgba(0, 0, 0, 0.1);
 			border-radius: var(--border-radius);
-			width: min(100%, 35ch);
+			width: min(100% - 1rem, 40ch);
 			margin-inline: auto;
 			align-items: center;
 			justify-content: center;
@@ -129,7 +128,7 @@ hr {
 	}
 
 	.indicas {
-		background-image: url(/img/site/background-purple.png);
+		background-color: rgba(111, 52, 172, 1);
 		table thead {
 			background-color: rgba(104, 73, 157, 0.5);
 		}
@@ -140,7 +139,7 @@ hr {
 	}
 
 	.sativas {
-		background-image: url(/img/site/background-red.png);
+				background-color: rgba(172, 52, 52, 1);
 		table thead {
 			background-color: rgba(215, 71, 53, 0.5);
 		}
@@ -151,7 +150,7 @@ hr {
 	}
 
 	.hybrids {
-		background-image: url(/img/site/background-green.png);
+		background-color: rgba(55, 145, 44, 1);
 		table thead {
 			background-color: rgba(12, 142, 68, 0.5);
 		}
@@ -221,6 +220,7 @@ hr {
 
 			.strain-name {
 				padding-right: 0.5rem;
+				font-weight: bolder!important;
 				& a[href] {
 					text-decoration-line: underline;
 					text-decoration-thickness: 1px;
@@ -242,28 +242,31 @@ hr {
 	background-position: center top;
 	color: white;
 	font-size: 0.75rem;
-	justify-content: center;
-	letter-spacing: 1px;
+	justify-content: center!important;
 	outline: 1px solid rgba(0, 0, 0, 0.1);
 	box-shadow: 0 3px 0 rgba(0, 0, 0, 0.66);
-	justify-content: space-between;
 	border-radius: var(--border-radius);
 	overflow: hidden;
 	margin-top: 1rem;
+	gap: 0!important;
+	flex-wrap: nowrap;
+	align-items: stretch;
 
 	& a[href] {
 		flex-basis: 10%;
-		display: block;
+		flex-grow: 1;
+		height: 100%;
+		line-height: 0.9;
 		padding: 0.75rem 0.5rem;
 		text-decoration: none;
-		flex-grow: 1;
 		text-align: center;
-		text-shadow: var(--text-shadow);
 		font-weight: 500;
-		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		padding: 1rem;
 
 		&:hover {
 			background-color: rgba(255, 255, 255, 0.2);
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 		}
 
 		&:last-child {

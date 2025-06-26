@@ -41,17 +41,17 @@
 			<div class="inner-header flex-row">
 				<div class="site-title">
 					<a href="/">{% include "parts/logo.njk" %}</a>
+					<h2 class="hd-title">HIDDEN DEALS</h2>
 				</div>
-				<div class="page-title">
-					<div class="today">
-						<h4 class="minimum">5 lb MINIMUM</h4>
-						<h2>HIDDEN DEALS</h2>
-						<h3 class="last-updated">
-							Last updated: <date>JUNE 25, 2025</date>
-						</h3>
-					</div>
+				<div class="nav-area">
+				<div class="today flex-row">
+						<span class="minimum">5lb minimum</span>
+						<p class="last-updated">Last updated: <br><date>JUNE 25, 2025</date></p>
+				</div>
+					{% include "parts/nav.njk" %}
+
 				</div>
 			</div>
-			{% include "parts/nav.njk" %}
+
 			{#	{% include "parts/nav-dropdown.njk" %} #}
 		</header>
