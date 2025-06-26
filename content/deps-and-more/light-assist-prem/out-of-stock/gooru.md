@@ -3,7 +3,7 @@ strain: gooru
 priceLevel: light assist premium
 thca: 28.23%
 profile: sativa
-photo1: https://media.dont.zone/hs/media/img/flower/light-dep-5_sativa_gooru_1.jpg
-photo2: https://media.dont.zone/hs/media/img/flower/light-dep-5_sativa_gooru_2.jpg
+photo1: ../img/light-assist-prem_sativa_gooru_1.jpg
+photo2: ../img/light-assist-prem_sativa_gooru_2.jpg
 video1: https://player.cloudinary.com/embed/?cloud_name=dcf9dmvo5&public_id=light-dep-5_sativa_gooru_1_r23tmt&profile=flower
 ---

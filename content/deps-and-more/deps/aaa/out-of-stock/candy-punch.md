@@ -3,6 +3,6 @@ strain: candy punch
 priceLevel: light dep aaa
 thca:
 profile: sativa
-photo1: https://media.dont.zone/hs/media/img/flower/dep-aaa_sativa_candy-punch.jpeg
+photo1: ..img/dep-aaa_sativa_candy-punch.jpeg
 video1: https://player.cloudinary.com/embed/?cloud_name=dcf9dmvo5&public_id=dep-aaa_sativa_candy-punch_w5rif9&profile=flower
 ---

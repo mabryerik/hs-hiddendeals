@@ -3,7 +3,7 @@ strain: sunset sherbet cookies
 priceLevel: light dep 5
 thca:
 profile: indica
-photo1: https://media.dont.zone/hs/media/img/flower/light-dep-4_indica_sunset-sherbet-cookies_1.jpg
-photo2: https://media.dont.zone/hs/media/img/flower/light-dep-4_indica_sunset-sherbet-cookies_2.jpg
+photo1: ../img/light-dep-4_indica_sunset-sherbet-cookies_1.jpg
+photo2: ../img/light-dep-4_indica_sunset-sherbet-cookies_2.jpg
 video1: https://player.cloudinary.com/embed/?cloud_name=dcf9dmvo5&public_id=light-dep-4_indica_sunset-sherbet-cookies_1_ql8e7o&profile=flower
 ---

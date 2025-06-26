@@ -3,7 +3,7 @@ strain: vanilla kush
 priceLevel: light assist premium
 thca: 36.52%
 profile: indica
-photo1: https://media.dont.zone/hs/media/img/flower/dep-aaa_indica_vanilla-kush.jpg
+photo1: ../img/light-assist-prem_indica_vanilla-kush.jpg
 video1: https://player.cloudinary.com/embed/?cloud_name=dcf9dmvo5&public_id=dep-aaa_indica_vanilla-kush_sgoltb&profile=flower
 source: https://www.allbud.com/marijuana-strains/indica-dominant-hybrid/vanilla-kush
 ---

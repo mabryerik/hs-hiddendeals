@@ -3,7 +3,7 @@ strain: rainbow sherbert
 priceLevel: light assist premium
 thca: 30.99%
 profile: hybrid
-photo1: https://media.dont.zone/hs/media/img/flower/dep-aaa_hybrid_rainbow-sherbert.jpg
+photo1: ../img/light-assist-prem_hybrid_rainbow-sherbert.jpg
 video1: https://player.cloudinary.com/embed/?cloud_name=dcf9dmvo5&public_id=dep-aaa_hybrid_rainbow-sherbert_ww61qb&profile=flower
 source: https://www.leafly.com/strains/rainbow-sherbet
 ---

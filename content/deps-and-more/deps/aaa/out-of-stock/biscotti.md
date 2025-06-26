@@ -3,7 +3,7 @@ strain: biscotti
 priceLevel: light dep aaa
 thca:
 profile: indica
-photo1: https://media.dont.zone/hs/media/img/flower/dep-aaa_indica_biscotti.jpeg
+photo1: ../img/dep-aaa_indica_biscotti.jpeg
 video1: https://player.cloudinary.com/embed/?cloud_name=dcf9dmvo5&public_id=dep-aaa_indica_biscotti_inoghw&profile=flower
 source: https://www.leafly.com/strains/biscotti
 ---
