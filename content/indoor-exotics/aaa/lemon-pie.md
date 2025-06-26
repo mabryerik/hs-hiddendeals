@@ -3,6 +3,6 @@ strain: lemon pie
 priceLevel: aaa indoor exotic
 thca: 33%
 profile: sativa
-photo1: https://media.dont.zone/hs/media/img/flower/aa-indoor_sativa_lemon-pie-33%25.jpeg
+photo1: ../img/aaa-indoor-ex_sativa_lemon-pie.jpg
 tags: inStock
 ---

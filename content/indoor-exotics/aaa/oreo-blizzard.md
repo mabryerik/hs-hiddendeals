@@ -4,7 +4,7 @@ profile: hybrid
 priceLevel: aaa indoor exotic
 thca: 32.46%
 video1: https://player.cloudinary.com/embed/?cloud_name=dcf9dmvo5&public_id=aaa-indoor-ex_hybrid_oreo-blizzard_tmq3fl&profile=flower
-photo1: https://media.dont.zone/hs/media/img/flower/aaa-indoor-ex_hybrid_oreo-blizzard_1.jpg
-photo2: https://media.dont.zone/hs/media/img/flower/aaa-indoor-ex_hybrid_oreo-blizzard_2.jpg
+photo1: ../img/aaa-indoor-ex_hybrid_oreo-blizzard_1.jpg
+photo2: ../img/aaa-indoor-ex_hybrid_oreo-blizzard_2.jpg
 tags: inStock
 ---
