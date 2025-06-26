@@ -1,0 +1,12 @@
+---
+strain: cherry punch
+profile: sativa
+priceLevel: aaa indoor exotic
+thca: 29.32%
+video1: https://player.cloudinary.com/embed/?cloud_name=dcf9dmvo5&public_id=a-indoor_sativa_cherry-punch_vzorv6&profile=flower
+photo1: ../img/aaa-indoor-ex_sativa_cherry-punch_1.jpg
+photo2: ../img/aaa-indoor-ex_sativa_cherry-punch_2.jpg
+source: https://www.leafly.com/strains/cherry-punch
+---
+
+Cherry Punch is a potent sativa-hybrid [...] strain crossed between Cherry AK-47 and Purple Punch F2. Bred by Symbiotic Genetics, Cherry Punch (also known as Black Cherry Punch) is widely celebrated for its bold cherry flavor profile that comes from dense, citrus terpenes. Consumers who smoke this strain say it smells fruity and rich and a little skunk-like. The high you get from smoking Cherry Punch is uplifting and relaxing - perfect for jamming out to a new album or even taking care of a few errands. This strain is ideal for those seeking relief from anxiety and stress. Cherry Punch buds come in a dark green color with purple specks and striking orange hairs. [via <a href="{{ source }}">Leafly</a>]

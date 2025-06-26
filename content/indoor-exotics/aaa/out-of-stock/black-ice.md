@@ -1,0 +1,11 @@
+---
+strain: black ice
+profile: indica
+thca: 24.24%
+priceLevel: aaa indoor exotic
+photo1: ../img/aaa-plus-indoor-ex_indica_black-ice.jpg
+video1: https://player.cloudinary.com/embed/?cloud_name=dcf9dmvo5&public_id=aaa-plus-indoor-ex_indica_black-ice_gncflk&profile=flower
+source: https://www.allbud.com/marijuana-strains/indica-dominant-hybrid/black-ice
+---
+
+Black Ice is an indica dominant hybrid (70% indica/30% sativa) strain created by breeders at the infamous Moon Seeds farm. This dank bud is a cross between the insanely popular Black Dominia X Ice strains [...] Black Ice is infamous for its euphoric, yet sedative, couch-locked high that still leaves you functional and energized. [...] With a scent of what can only be described by users as a "floral hay" aroma and a sweet berry taste that is spicy upon exhale, Black Ice is as delicious as it is potent. The Black Ice buds are a frosty mint green with fiery orange hairs that are bathed in resin and caked with white crystals. <cite>- <a href="{{ source }}">allbud</a></cite>
