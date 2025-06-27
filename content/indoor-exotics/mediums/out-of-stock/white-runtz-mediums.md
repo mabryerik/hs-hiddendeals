@@ -4,7 +4,7 @@ profile: hybrid
 priceLevel: exotic mediums
 thca: 28.37
 video1: https://player.cloudinary.com/embed/?cloud_name=dcf9dmvo5&public_id=ex-mediums_hybrid_white-runtz_1_nbxo8p&profile=flower
-photo1: https://media.dont.zone/hs/media/img/flower/ex-mediums_hybrid_white-runtz_1.jpg
-photo2: https://media.dont.zone/hs/media/img/flower/ex-mediums_hybrid_white-runtz_2.jpg
+photo1: ../img/ex-mediums_hybrid_white-runtz_1.jpg
+photo2: ../img/ex-mediums_hybrid_white-runtz_2.jpg
 ---
 
