@@ -4,19 +4,6 @@
 <head>
 
 	<script src="https://analytics.ahrefs.com/analytics.js" data-key="Crnhdv6o5XX550LfOrdmLg" async></script>
-
-	<script type="text/javascript">
-		(function(c, l, a, r, i, t, y) {
-			c[a] = c[a] || function() {
-				(c[a].q = c[a].q || []).push(arguments)
-			};
-			t = l.createElement(r);
-			t.async = 1;
-			t.src = "https://www.clarity.ms/tag/" + i;
-			y = l.getElementsByTagName(r)[0];
-			y.parentNode.insertBefore(t, y);
-		})(window, document, "clarity", "script", "r2lpt0pqvu");
-	</script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ title or strain | capitalizeWords }}</title>
@@ -44,14 +31,8 @@
 					<h2 class="hd-title">HIDDEN DEALS</h2>
 				</div>
 				<div class="nav-area">
-				<div class="today flex-row">
-						<span class="minimum">5lb minimum</span>
-						<p class="last-updated">Last updated: <br><date>JULY 10, 2025</date></p>
-				</div>
+					{% include "parts/today.njk" %}
 					{% include "parts/nav.njk" %}
-
 				</div>
 			</div>
-
-			{#	{% include "parts/nav-dropdown.njk" %} #}
 		</header>

@@ -8,13 +8,6 @@ import pluginSEO from "eleventy-plugin-seo";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
-	eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
-	eleventyConfig.addLayoutAlias("page", "layouts/page.njk");
-	eleventyConfig.addLayoutAlias("post-media", "layouts/post-media.njk");
-	eleventyConfig.addLayoutAlias("menu", "layouts/menu.njk");
-	eleventyConfig.addLayoutAlias("media", "layouts/media.njk");
-	eleventyConfig.addLayoutAlias("home", "layouts/home.njk");
-	eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
 	eleventyConfig.addCollection(
 		"depsAndMoreInStock",
 	function (collectionsApi) {
@@ -82,18 +75,6 @@ export default async function(eleventyConfig) {
 	function (collectionsApi) {
 		return collectionsApi.getFilteredByTags("exotics", "inStock", "smalls");
 	}
-	);
-	eleventyConfig.addCollection(
-		"indoorNoStock",
-		function (collectionsApi) {
-			return collectionsApi.getFilteredByTags("indoor", "noStock");
-		}
-	);
-	eleventyConfig.addCollection(
-		"indoorInStock",
-		function (collectionsApi) {
-			return collectionsApi.getFilteredByTags("indoor", "inStock");
-		}
 	);
 	eleventyConfig.addCollection(
 		"lightAssistNoStock",
