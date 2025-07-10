@@ -1,35 +1,39 @@
-<article class="post">
+<article class="post flex-row">
 		<header class="flex-column">
 
-			<div class="flex-row row">
+			<div class="row">
 				<div class="flex-column strain-info">
-					<a href="{{ post.url }}"><h2 class="">{{ post.data.strain }}</h2></a>
-					<h3 class="price-level">{{ post.data.priceLevel }}</h3>
+				<div class="meta flex-row">
+					<div class="price-level">
+						<span>{{ post.data.priceLevel }}</span>
+					</div>
+					<div class="profile {% if post.data.profile == "hybrid" %}hybrid{% endif %}{% if post.data.profile == "indica" %}indica{%endif%}{% if post.data.profile == "sativa" %}sativa{% endif %}">
+						<span class="">
+							{{ post.data.profile }}
+						</span>
+					</div>
+					{% if post.data.thca %}
+					<div class="thca">
+						<span class="">
+							{{ post.data.thca }} THCa
+						</span>
+					</div>
+					{% endif %}
 				</div>
-				<div class="flex-column other-info {% if post.data.profile == "hybrid" %}hybrid{% endif %} {% if post.data.profile == "indica" %}indica{%endif%} {% if post.data.profile == "sativa" %}sativa{% endif %}">
-				{% if post.data.thca %}
-					<span class="profile">
-						{{ post.data.profile }}
-					</span>
-					<span class="thca center">
-						{{ post.data.thca }} THCa
-					</span>
-					{% else %}
-					<span class="profile nothca">
-						{{ post.data.profile }}
-					</span>
-				{% endif %}
+					<a href="{{ post.url }}"><h2 class="">{{ post.data.strain }}</h2></a>
 				</div>
 			</div>
 			<div class="price-compare flex-row">
-				<p class="center hd">
-					<strong>Hidden Deals Price</strong><br>
-					{{ post.data.hdPrice }}
-				</p>
-				<p class="center reg">
-					<span><strong>Regular Price</strong></span>
-					{{ post.data.regPrice }}
-				</p>
+				<div class="center hd">
+					<h5>Hidden Deals Price</h5>
+					<span class="">{{ post.data.hdPrice }}</span>
+				</div>
+				<div class="center reg">
+					<div class="inner-reg">
+						<h5>Regular Price</h5>
+						<span class="">{{ post.data.regPrice }}</span>
+					</div>
+				</div>
 			</div>
 		</header>
 		<div class="media-area">

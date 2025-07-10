@@ -1,0 +1,11 @@
+---
+strain: papaya punch
+profile: indica
+priceLevel: aaa+ indoor exotic
+thca: 26.86%
+video1: https://player.cloudinary.com/embed/?cloud_name=dcf9dmvo5&public_id=aaa-plus-indoor-ex_indica_papaya-punch_aibfdp&profile=flower
+photo1: ../img/aaa-plus-indoor-ex_indica_papaya-punch_1.jpg
+photo2: ../img/aaa-plus-indoor-ex_indica_papaya-punch_2.jpg
+hdPrice: $1,122.30
+regPrice: $1,290
+---

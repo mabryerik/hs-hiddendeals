@@ -1,5 +1,5 @@
 ---
-strain: superboof
+strain: super boof
 priceLevel: aaa+++ ultra exotic
 thca: 28.89%
 profile: sativa

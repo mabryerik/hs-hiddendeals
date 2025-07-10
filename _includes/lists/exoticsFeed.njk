@@ -15,7 +15,7 @@
 			<header class="section-header">
 				<h2 id="aaa-plusplusplus">AAA+++ ULTRA EXOTICS</h2>
 			</header>
-			<div id="media-list" class="featured flex-row">
+			<div id="media-list" class="flex-row">
 				{% for post in collections.aaaPlusPlusPlusExoticsInStock | reverse %}
 				{% include "parts/flower-list-item.njk" %}
 				{% endfor %}
@@ -26,18 +26,21 @@
 			<header class="section-header">
 				<h2 id="aaa-plusplus">AAA++ INDOOR EXOTICS</h2>
 			</header>
-			<div id="media-list" class="featured flex-row">
+			<div id="media-list" class="flex-row">
 				{% for post in collections.aaaPlusPlusExoticsInStock | reverse %}
 				{% include "parts/flower-list-item.njk" %}
 				{% endfor %}
 			</div>
+			<footer class="post-footer">
+				<a href="#">Back to top ↑</a>
+			</footer>
 		</section>
 
 		<section class="featured">
 			<header class="section-header">
 				<h2 id="aaa-plus">AAA+ INDOOR EXOTICS</h2>
 			</header>
-			<div id="media-list" class="featured flex-row">
+			<div id="media-list" class="flex-row">
 				{% for post in collections.aaaPlusExoticsInStock | reverse %}
 				{% include "parts/flower-list-item.njk" %}
 				{% endfor %}
@@ -48,7 +51,7 @@
 			<header class="section-header">
 				<h2 id="aaa">AAA INDOOR EXOTICS</h2>
 			</header>
-			<div id="media-list" class="featured flex-row">
+			<div id="media-list" class="flex-row">
 				{% for post in collections.aaaExoticsInStock | reverse %}
 				{% include "parts/flower-list-item.njk" %}
 				{% endfor %}
@@ -59,7 +62,7 @@
 			<header class="section-header">
 				<h2 id="pie">PREMIUM INDOOR EXOTICS</h2>
 			</header>
-			<div id="media-list" class="featured flex-row">
+			<div id="media-list" class="flex-row">
 				{% for post in collections.premiumIndoorExoticsInStock | reverse %}
 				{% include "parts/flower-list-item.njk" %}
 				{% endfor %}
@@ -70,18 +73,18 @@
 			<header class="section-header">
 				<h2 id="mediums">EXOTIC MEDIUMS</h2>
 			</header>
-			<div id="media-list" class="featured flex-row">
+			<div id="media-list" class="flex-row">
 				{% for post in collections.mediumsExoticsInStock | reverse %}
 				{% include "parts/flower-list-item.njk" %}
 				{% endfor %}
 			</div>
 		</section>
 
-		<section class="featured">
+		<section class="featured visually-hidden">
 			<header class="section-header">
 				<h2 id="smalls">EXOTIC SMALLS</h2>
 			</header>
-			<div id="media-list" class="featured flex-row">
+			<div id="media-list" class="flex-row">
 				{% for post in collections.smallsExoticsInStock | reverse %}
 				{% include "parts/flower-list-item.njk" %}
 				{% endfor %}

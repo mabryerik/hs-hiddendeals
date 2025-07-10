@@ -1,7 +1,7 @@
 <div class="homepage">
 	<section class="featured">
 		<header class="section-header"><h2><span>NEW</span> INDOOR EXOTICS</h2></header>
-		<div id="media-list" class="featured flex-row">
+		<div id="media-list" class="flex-row">
 			{% for post in collections.exoticsInStock | head(-6) %}
 				{% include "parts/flower-list-item.njk" %}
 			{% endfor %}
@@ -9,11 +9,12 @@
 		<footer class="post-footer">
 			<a href="/indoor-exotics">All Indoor Exotic THCa Flower »</a>
 		</footer>
+		<div class="overlay"></div>
 	</section>
 
 	<section class="featured">
 		<header class="section-header"><h2><span>NEW</span> DEPS & LIGHT ASSIST PREMIUM</h2></header>
-		<div id="media-list" class="featured flex-row">
+		<div id="media-list" class="flex-row">
 			{% for post in collections.depsInStock | head(-6) %}
 				{% include "parts/flower-list-item.njk" %}
 			{% endfor %}
@@ -21,5 +22,6 @@
 		<footer class="post-footer">
 			<a href="/deps-and-more">All Light Dep & More THCa Flower »</a>
 		</footer>
+		<div class="overlay"></div>
 	</section>
 </div>

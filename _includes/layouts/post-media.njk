@@ -5,34 +5,41 @@ layout: layouts/base.njk
 
 <section id="media-page">
 	<article class="post">
-		<header class="flex-column">
-			<div class="flex-row row">
-				<div class="price-compare flex-row">
-					<p class="center">
-						<strong>Hidden Deals Price</strong><br>
-						{{ hdPrice }}
-					</p>
-					<p class="center">
-						<span><strong>Regular Price</strong></span>
-						<span class="reg">{{ regPrice }}</span>
-					</p>
+	<header class="flex-column">
+		<div class="row">
+			<div class="flex-column strain-info">
+			<div class="meta flex-row">
+				<div class="price-level">
+					<span>{{ priceLevel }}</span>
 				</div>
-				<div class="flex-column other-info {% if profile == "hybrid" %}hybrid{% endif %} {% if profile == "indica" %}indica{%endif%} {% if profile == "sativa" %}sativa{% endif %}">
-					{% if thca %}
-						<span class="profile">
-							{{ profile }}
-						</span>
-						<span class="thca center">
-							{{ thca }} THCa
-						</span>
-						{% else %}
-						<span class="profile nothca">
-							{{ profile }}
-						</span>
-					{% endif %}
+				<div class="profile {% if profile == "hybrid" %}hybrid{% endif %}{% if profile == "indica" %}indica{%endif%}{% if profile == "sativa" %}sativa{% endif %}">
+					<span class="">
+						{{ profile }}
+					</span>
+				</div>
+				{% if thca %}
+				<div class="thca">
+					<span class="">
+						{{ thca }} THCa
+					</span>
+				</div>
+				{% endif %}
+			</div>
+			</div>
+		</div>
+		<div class="price-compare flex-row">
+			<div class="center hd">
+				<h5>Hidden Deals Price</h5>
+				<span class="">{{ hdPrice }}</span>
+			</div>
+			<div class="center reg">
+				<div class="inner-reg">
+					<h5>Regular Price</h5>
+					<span class="">{{ regPrice }}</span>
 				</div>
 			</div>
-		</header>
+		</div>
+	</header>
 		<div class="media-area">
 			<div class="flex-row">
 				{% if video1 %}

@@ -1,0 +1,9 @@
+---
+strain: zoap
+profile: sativa
+thca: 32.88%
+priceLevel: aaa indoor exotic
+photo1: ../img/aaa-indoor-ex_sativa_zoap_1.jpg
+photo2: ../img/aaa-indoor-ex_sativa_zoap_2.jpg
+video1: https://player.cloudinary.com/embed/?cloud_name=dcf9dmvo5&public_id=aaa-indoor-ex_sativa_zoap_s0m2we&profile=flower
+---

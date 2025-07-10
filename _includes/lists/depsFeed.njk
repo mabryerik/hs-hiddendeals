@@ -1,5 +1,5 @@
 <div class="feed-page">
-<div class="feed-nav">
+<div class="feed-nav visually-hidden">
 	<nav class="menu-nav flex-row">
 		<a href="#light-assist">Light Assist Premium</a>
 		<a href="#dep-aaa">Light Dep AAA</a>
@@ -11,25 +11,39 @@
 
 <section class="featured">
 	<header class="section-header">
+		<h2 id="light-assist">Available</h2>
+	</header>
+	<div id="media-list" class="flex-row">
+		{% for post in collections.depsAndMoreInStock | reverse %}
+		{% include "parts/flower-list-item.njk" %}
+		{% endfor %}
+	</div>
+</section>
+
+<section class="featured visually-hidden">
+	<header class="section-header">
 		<h2 id="light-assist">Light Assist Premium</h2>
 	</header>
-	<div id="media-list" class="featured flex-row">
+	<div id="media-list" class="flex-row">
 		{% for post in collections.lightAssistInStock | reverse %}
 		{% include "parts/flower-list-item.njk" %}
 		{% endfor %}
 	</div>
 </section>
 
-<section class="featured">
+
+
+<section class="featured visually-hidden">
 	<header class="section-header">
 		<h2 id="dep-aaa">Light Dep AAA</h2>
 	</header>
-	<div id="media-list" class="featured flex-row">
+	<div id="media-list" class="flex-row">
 		{% for post in collections.depAAAInStock | reverse %}
 		{% include "parts/flower-list-item.njk" %}
 		{% endfor %}
 	</div>
 </section>
+
 
 <section class="featured visually-hidden">
 	<header class="section-header">
@@ -42,7 +56,7 @@
 	</div>
 </section>
 
-<section class="featured">
+<section class="featured visually-hidden">
 	<header class="section-header">
 		<h2 id="prem-smalls">Premium Smalls</h2>
 	</header>

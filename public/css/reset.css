@@ -4,6 +4,12 @@
 	box-sizing: border-box;
 }
 
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
 blockquote,
 body,
 dd,
@@ -24,7 +30,7 @@ ul[role=list] {
 
 body {
 	min-height: 100vh;
-	line-height: 1.2;
+	line-height: 1.25;
 }
 
 button,
@@ -34,7 +40,7 @@ h3,
 h4,
 input,
 label {
-	line-height: 1.1;
+	line-height: 1;
 }
 
 h1,
@@ -70,4 +76,8 @@ textarea {
 
 textarea:not([rows]) {
 	min-height: 10em;
+}
+
+:target {
+	scroll-margin-block: 5ex;
 }
