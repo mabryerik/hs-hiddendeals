@@ -9,17 +9,20 @@
 				<section id="la-prem" class="">
 					<header class="flex-row">
 						<h3 class="">Light Assit Premium</h3>
-						<div class="price-compare flex-row">
-							<p class="center hd">
-								<strong>Hidden Deals</strong><br>
-								{{ metadata.lightassisthd | safe }}
-							</p>
-							<p class="center reg">
-								<span><strong>Regular Price</strong></span>
-								{{ metadata.lightassistreg | safe }}
-							</p>
-						</div>
 
+						<div class="price-compare flex-row">
+							<div class="center hd">
+								<h5>Hidden Deals</h5>
+								<span> {{ metadata.lightassisthd | safe }}
+								</span>
+							</div>
+							<div class="center reg">
+								<div class="inner-reg">
+									<h5>Regular Price</h5>
+									<span>{{ metadata.lightassistreg | safe }}</span>
+								</div>
+							</div>
+						</div>
 
 
 					</header>
@@ -156,31 +159,32 @@
 				<section id="light-dep" class="">
 					<header class="flex-row">
 						<h3 class="">Light Dep</h3>
-
 						<div class="price-compare flex-row">
-							<p class="center hd">
-								<strong>Hidden Deals AAA</strong><br>
-								{{ metadata.depaaahd | safe }}
-							</p>
-							<p class="center reg">
-								<span><strong>Regular Price</strong></span>
-								{{ metadata.depaaareg | safe }}
-							</p>
-						</div>
+							<div class="center hd">
+								<h5>Hidden Deals</h5>
+								<span> 								{{ metadata.depaaahd | safe }}
 
+								</span>
+							</div>
+							<div class="center reg">
+								<div class="inner-reg">
+									<h5>Regular Price</h5>
+									<span>{{ metadata.depaaareg | safe }}</span>
+								</div>
+							</div>
+						</div>
 						<div class="price-compare flex-row">
-							<p class="center hd">
-								<strong>Hidden Deals D5</strong><br>
-								{{ metadata.dep5hd | safe }}
-							</p>
-							<p class="center reg">
-								<span><strong>Regular Price</strong></span>
-								{{ metadata.dep5reg | safe }}
-							</p>
+							<div class="center hd">
+								<h5>Hidden Deals</h5>
+								<span> {{ metadata.dep5hd | safe }}</span>
+							</div>
+							<div class="center reg">
+								<div class="inner-reg">
+									<h5>Regular Price</h5>
+									<span>{{ metadata.dep5reg | safe }}</span>
+								</div>
+							</div>
 						</div>
-
-
-
 					</header>
 					<div class="flex-row">
 						<article class="indicas visually-hidden">
