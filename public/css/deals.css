@@ -141,22 +141,22 @@ main a[href] {
 	font-size: calc(1rem - 2px);
 
 	caption {
-		background-color: whitesmoke;
-		color: black;
-		padding: 0.5rem 0.25rem;
+		color: whitesmoke;
+		padding: 3dvw;
 		font-size: calc(1rem + 6px);
 		text-transform: uppercase;
 		font-family: var(--font-heading-family);
 		letter-spacing: 2px;
-		text-shadow: 0 2px 0 white;
+		text-shadow: var(--text-shadow);
+		background: transparent;
 	}
 
 	thead {
 
 		th {
-			color: black;
+			color: whitesmoke;
 			font-weight: bold;
-			text-shadow: 0 1px 0 white;
+			text-shadow: var(--text-shadow);
 
 		}
 	}
@@ -164,12 +164,17 @@ main a[href] {
 	tbody {
 		tr {
 			&:nth-of-type(even) {
-				background-color: whitesmoke;
+				background-color: rgba(244, 244, 244, 0.05);
+				backdrop-filter: brightness(125%);
 			}
 
 			.reg-price, .hd-price {
 				letter-spacing: 1px;
 			}
+
+			td {
+color: whitesmoke;
+			text-shadow: var(--text-shadow);			}
 
 			td.price-level {
 				font-size: calc(1rem - 2px);
@@ -195,17 +200,36 @@ main a[href] {
 				color: black;
 
 				a[href] {
-					color: black;
+					color: whitesmoke;
 					text-transform: uppercase;
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
+						text-decoration-color: var(--font-color-secondary);
+					}
 				}
 			}
 		}
 	}
 }
 
+.pricing-info:first-of-type {
+	background-image: radial-gradient(hsla(113, 40%, 42%, 1), hsla(146, 87%, 30%, 1));
+	caption, thead th, tfoot th {
+		background-color: hsla(146, 87%, 14%, 1);
+	}
+}
+
+.pricing-info:last-of-type {
+	background-image: radial-gradient(hsla(254, 37%, 45%, 1), #89608E);
+	caption, thead th, tfoot th {
+		background-color: hsla(254, 37%, 45%, 1);
+	}
+}
+
 .full-width {
 	width: 100%;
-	margin-block: 1rem 2rem;
+	margin-block: 0 2dvw;
 	border-collapse: collapse;
 	border: 1px solid rgba(0, 0, 0, 0.5);
 
@@ -677,7 +701,6 @@ main {
 	background:
 	radial-gradient(farthest-corner, hsla(163, 11%, 12%, 1), hsla(163, 11%, 22%, 1));
 	color: whitesmoke;
-	z-index: 999;
 	position: relative;
 	text-shadow: var(--text-shadow);
 
@@ -737,6 +760,7 @@ main {
 
 #page .page-header {
 	font-size: clamp(1.5rem, 5dvw, 2.5rem);
+	text-align: center;
 }
 
 #homepage {
