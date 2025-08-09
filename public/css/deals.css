@@ -126,6 +126,10 @@ main a[href] {
 	text-decoration-thickness: 1px;
 }
 
+.wrapper:has(#homepage) .page-header {
+	display: none;
+}
+
 /* pricing page */
 
 .pricing-info {
