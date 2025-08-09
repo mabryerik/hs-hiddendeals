@@ -205,6 +205,8 @@ hr {
 		flex-grow: 1;
 		margin-bottom: 1rem;
 		border-radius: var(--border-radius-odd);
+		position: relative;
+		z-index: 1;
 
 		& h4 {
 			color: whitesmoke;

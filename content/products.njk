@@ -1,0 +1,169 @@
+---
+title: products test
+layout: layouts/page.njk
+---
+
+<ul>
+	{% for item in products %}
+		{% if item.priceLevel == "AAA+++ ULTRA EXOTIC" %}
+		{% if item.profile == "INDICA" %}
+			<li>
+				<h3>{{ item.strain }}</h3>
+				<p>{{ item.profile }}</p>
+				<p>Price: {{ item.priceLevel }}</p>
+				<p>THCA: {{ item.thcaPercent }}%</p>
+				<p>Stock: {{ item.stockLbs }} lbs</p>
+			</li>
+{% endif %}
+		{% endif %}
+	{% endfor %}
+</ul>
+
+<div class="content menu">
+	<section class="exotics">
+		<div class="exotics-nav">
+			<nav class="menu-nav flex-row">
+				<a href="#ultra-ex">AAA+++ Utlra Exotic</a>
+				<a href="#aaa-plusplus">AAA++ Exotic</a>
+				<a href="#aaa-plus">AAA+ Exotic</a>
+				<a href="#aaa">AAA Exotic</a>
+				<a href="#pie">Premium Indoor Exotic</a>
+			</nav>
+		</div>
+		<div class="padding">
+			<section id="ultra-ex" class="">
+				<header class="flex-row">
+					<h3 class="">aaa+++ ultra exotics</h3>
+					<div class="price-compare flex-row">
+						<p class="center hd">
+							<strong>Hidden Deals</strong><br>
+							{{ metadata.aaaplusplusplushd | safe }}
+						</p>
+						<p class="center reg">
+							<span><strong>Regular Price</strong></span>
+							{{ metadata.aaaplusplusplusreg | safe }}
+						</p>
+					</div>
+
+				</header>
+				<div class="flex-row">
+					<article class="indicas">
+						<header class="profile-header">
+							<h4 class="center">Indica</h4>
+						</header>
+						<div class="strain-body" role="region" tabindex="0">
+							<table>
+								<thead>
+									<tr>
+										<th class="left">Strains</th>
+										<th class="center">THCa</th>
+										<th class="center">Stock</th>
+									</tr>
+								</thead>
+								<tbody class="strain">
+								{% for item in products %}
+								{% if item.priceLevel == "AAA+++ ULTRA EXOTIC" %}
+								{% if item.profile == "INDICA" %}
+									<tr>
+										<td class="strain-name">
+											{{ item.strain }}
+										</td>
+										<td class="thca center">
+											{{ item.thcaPercent }}%
+										</td>
+										<td class="stock center">
+											{{ item.stockLbs }}
+										</td>
+									</tr>
+									{% endif %}
+										{% endif %}
+									{% endfor %}
+								</tbody>
+							</table>
+						</div>
+
+					</article>
+
+					<article class="sativas">
+						<header class="profile-header">
+							<h4 class="center">Sativa</h4>
+						</header>
+						<div class="strain-body" role="region" tabindex="0">
+							<table>
+								<thead>
+									<tr>
+										<th class="left">Strains</th>
+										<th class="center">THCa</th>
+										<th class="center">Stock</th>
+									</tr>
+								</thead>
+								<tbody class="strain">
+									{% for item in productsWithSlugs %}
+										{% if item.priceLevel == "light assist premium" and item.profile == "indica" %}
+											<tr>
+												<td class="strain-name">
+													{% if item.photo1 or item.video1 %}
+														<a href="/flower/{{ item.slug }}/">{{ item.strain }}</a>
+													{% else %}
+														{{ item.strain }}
+													{% endif %}
+												</td>
+												<td class="thca center">
+													{{ item.thcaPercent }}%
+												</td>
+												<td class="stock center">
+													{{ item.stockLbs }}
+												</td>
+											</tr>
+										{% endif %}
+									{% endfor %}
+								</tbody>
+							</table>
+						</div>
+					</article>
+
+					<article class="hybrids">
+						<header class="profile-header">
+							<h4 class="center">Hybrid</h4>
+						</header>
+						<div class="strain-body" role="region" tabindex="0">
+							<table>
+								<thead>
+									<tr>
+										<th class="left">Strains</th>
+										<th class="center">THCa</th>
+										<th class="center">Stock</th>
+									</tr>
+								</thead>
+								<tbody class="strain">
+									{% for item in products %}
+									{% if item.priceLevel == "AAA+++ ULTRA EXOTIC" %}
+									{% if item.profile == "HYBRID" %}
+									<tr>
+										<td class="strain-name">
+											{{ item.strain }}
+										</td>
+										<td class="thca center">
+										<span class="{% if item.thcaPercent == "0" %}visually-hidden{% endif %}">
+											{{ item.thcaPercent }}%
+										</span>
+										</td>
+										<td class="stock center">
+											{{ item.stockLbs }}
+										</td>
+									</tr>
+									{% endif %}
+									{% endif %}
+									{% endfor %}
+								</tbody>
+							</table>
+						</div>
+					</article>
+
+				</div>
+			</section>
+
+		</div>
+	</section>
+
+</div>

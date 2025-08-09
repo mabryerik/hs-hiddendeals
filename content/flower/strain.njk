@@ -1,0 +1,22 @@
+---
+layout: layouts/post-media.njk
+pagination:
+  data: productsWithSlugs
+  size: 1
+  alias: product
+permalink: "flower/{{ product.slug }}/index.html"
+---
+
+<h1>{{ product.strain }}</h1>
+<p>Profile: {{ product.profile }}</p>
+<p>Price Level: {{ product.priceLevel }}</p>
+<p>THCA: {{ product.thcaPercent }}%</p>
+<p>Stock: {{ product.stockLbs }} lbs</p>
+
+{% if product.photo1 %}
+	<img src="{{ product.photo1 }}" alt="{{ product.strain }}" eleventy:ignore>
+{% endif %}
+
+{% if product.video1 %}
+	<video controls src="{{ product.video1 }}"></video>
+{% endif %}

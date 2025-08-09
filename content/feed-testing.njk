@@ -1,0 +1,68 @@
+---
+layout: layouts/list-page.njk
+title: testing new grid layout
+---
+
+<div class="group">
+	<header class="section-header flex-row">
+		<h2 id="aaa-plusplusplus">AAA+++ ULTRA EXOTICS</h2>
+		<div class="price-compare flex-row">
+			<div class="center hd">
+				<h5>Hidden Deals Price</h5>
+				<span class="">{{ metadata.aaaplusplusplushd }}</span>
+			</div>
+			<div class="center reg">
+				<div class="inner-reg">
+					<h5>Regular Price</h5>
+					<span class="">{{ metadata.aaaplusplusplusreg }}</span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="ultra-exotics" class="grid-container">
+		{% for post in collections.aaaPlusPlusPlusExoticsInStock | reverse %}
+
+		<article class="grid-item">
+			<div class="media-area">
+				{% if post.data.photo1 %}
+				<div class="item">
+				<div class="img-container">
+					<a href="{{ post.url }}">
+						<img eleventy:ignore src="{{ post.data.photo1 }}" alt="{{post.data.strain }} THCa Flower" class="full-span" tabindex="0">
+						</a></div>
+				</div>
+				{% else %}
+				<div class="item">
+					<a href="{{ post.url }}">
+						<iframe src="{{ post.data.video1 }}" width="720" height="720" style="height: auto; width: 100%; aspect-ratio: 1 / 1;" allow="autoplay; fullscreen; encrypted-media; picture-in-picture" allowfullscreen frameborder="0" class="rounded"></iframe>
+					</a>
+
+				</div>
+				{% endif %}
+			</div>
+			<header class="item-header strain-info flex-row">
+				<h2 class="strain-name">
+					<a href="{{ post.url }}">{{ post.data.strain }}</a>
+				</h2>
+				<div class="meta">
+					<div class="profile {% if post.data.profile == "hybrid" %}hybrid{% endif %}{% if post.data.profile == "indica" %}indica{%endif%}{% if post.data.profile == "sativa" %}sativa{% endif %}">
+						<span class="">
+							{{ post.data.profile }}
+						</span>
+					</div>
+					{% if post.data.thca %}
+					<div class="thca">
+						<span class="">
+							{{ post.data.thca }} THC<span class="lower">a</span>
+						</span>
+					</div>
+					{% endif %}
+				</div>
+			</header>
+
+		</article>
+
+
+		{% endfor %}
+	</div>
+</div>
